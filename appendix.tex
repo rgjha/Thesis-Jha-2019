@@ -1,0 +1,390 @@
+%\addcontentsline{toc}{section}{Appendix A}
+
+
+ \section*{\label{app:sugra_details} \noindent Appendix A.1 Operators and their relevance}
+%\subsection*{\label{app:sugra_details} }
+
+
+If an operator \cO behaves as $E^{\Delta_{i}}$, then $\Delta_{i}$ is its dimension and $g_{i}$ has units of $E^{D - \Delta_{i}}$, where $D$ is the spacetime dimension. For ex : 
+\beq
+\frac{1}{2} \int d^D x \partial_{\mu} \phi \partial ^{\mu} \phi 
+\eeq
+$\phi$ has dimension $E^{D/2 - 1}$. Hence an operator constructed out of A $\phi$'s and B derivatives has 
+\beq
+\Delta_{i} = A \Bigg (\frac{D}{2} - 1 \Bigg) + B 
+\eeq
+We can define dimensionless couplings as : 
+\beq
+\lambda_{i} = \Lambda^{\Delta - D} g_{i} 
+\eeq
+Note that when $ \Delta_{i} = D$, then $g_{i}$ is dimensionless and we don't need any contruction. 
+
+
+\bea
+\int d^{D} x \cO \sim E^{D - \Delta_{i}} \\ 
+\eea 
+so that $i^th$ term is of order (in $g_{i}$) 
+
+\beq
+\Bigg (\frac{E}{\Lambda} \Bigg)^{\Delta_{i} - D} \lambda_{i} 
+\eeq
+
+We see that if $\Delta_{i} > D$, then the term becomes less and less important at low energies. If $\Delta_{i} < D$, it becomes more and more important at low energies like $\cN = (8,8)$ SYM in two dimensions. 
+
+\begin {table}
+ \renewcommand\arraystretch{1.9}   % Increase the height of each row
+  \addtolength{\tabcolsep}{2 pt}    % Increase separation between columns
+\begin{center}
+\begin{tabular}{ |  p{2cm} |  p{2cm} || p{2cm} |c || p{4cm}}
+    \hline
+    $\Delta_{i}$ & Size in IR & Nature & Property  \\ \hline  \hline
+     < D  & Increases  &  Relevant & Super-renormalizable \\ \hline 
+     > D  & Decreases &  Irrelevant & Non-renormalizable \\ \hline 
+     = D  & Constant & Marginal & Strictly renormalizable \\ \hline
+\end{tabular}
+\vspace{3mm}
+\caption {Dimension of operators, size in the IR, nature and property of the theory.} 
+\end{center}
+\end {table}
+
+
+
+
+\noindent \section*{\label{app:spinors} Appendix A.2 Spinors in various dimensions}
+
+
+We have often come across notations like $\mathcal{N} = (2,2)$ and $\mathcal{N} = (8,8)$ in the main text. This is different from the notation we are used to in four dimensions. In 4d, the Weyl representation is complex, so that the representation of $\bar{Q}$ is fixed to be the conjugate of the Q representation. In 2d, the Weyl representation is real ($\textit{Majorana-Weyl}$) and the $\bar{Q}$ representation is independent of the Q representation. This can be seen for various dimensions from Table 1. 
+
+
+
+\begin {table}[htbp] 
+%\caption {T} \label{ab:title} 
+\begin{center}
+\begin{tabular}{ |  p{3cm} | l | l |  l | p{3cm} |}
+
+    \hline
+    \textbf{Dimensions(d)} & \textbf{Majorana} & \textbf{Weyl} & \textbf{Weyl-Majorana}  & \textbf{Min.Rep} \\ \hline \hline 
+     2 & Yes & Self & Yes & 1 \\ \hline 
+     3 & Yes & - & - & 2 \\ \hline
+     4 & Yes & Complex & - & 4 \\ \hline
+     5 & - & - & - & 8 \\ \hline
+      6 & - & Self & - & 8 \\ \hline
+     7 & - & - & - & 16 \\ \hline
+     8 & Yes & Complex & - & 16 \\ \hline
+     9 & Yes & - & - & 16 \\ \hline
+     10 (\textit{mod 8}, 2) & Yes & Self & Yes & 16 \\ \hline
+     11 (\textit{mod 8}, 3) & Yes & - & - & 32 \\ \hline
+     12 (\textit{mod 8}, 4) & Yes & Complex & - & 64 \\ \hline
+\end{tabular}
+\vspace{3mm}
+\caption {Dimensions in which various conditions are allowed for SO(d-1,1) spinors} 
+\end{center}
+\end {table}
+
+
+\begin {table}[htbp] 
+\begin{center}
+\begin{tabular}{ |  p{8cm} |  p{8cm} |}
+    \hline
+    \emph{Boundary : Gauge theory}  & \emph{Bulk : Gravity }   \\ \hline \hline 
+    Partition function   &  Partition function \\ \hline 
+     Wilson loop along $\mathcal{C}$ & String worldsheet with end points on $\mathcal{C}$  \\ \hline 
+     Number of degrees of freedom & Radius of AdS space  \\ \hline
+     Free energy & On-shell value of the action  \\ \hline
+\end{tabular}
+\vspace{3mm}
+\caption {The basic dictionary for AdS/CFT correspondence. } 
+\end{center}
+\end {table}
+
+
+\noindent \section*{\label{app:spinors} Appendix A.3 Type II SUGRA details}
+
+The temperature, $T_{H}$ is given by : 
+\begin{equation}
+\label{eq:temp_SUGRA}
+T \approx \frac{(7-p) U_{0}^{(5-p)/2}}{4 \pi \sqrt{d_{p} \lambda}}
+\end{equation}
+Also, 
+\begin{equation}
+  \label{eq:alpha_prime}
+\alpha^{\prime} R \approx \sqrt{\frac{U_{0}^{(3-p)}}{\lambda}}
+\end{equation}
+
+Hence, we see from ~\ref{eq:temp_SUGRA} and ~\ref{eq:alpha_prime} that $ \alpha^{\prime} R \approx t^{\frac{3-p}{5-p}}$ and hence, $ (\alpha^{\prime})^3$ correction depends on $t^{\frac{9-3p}{5-p}}$.This power counting has been discussed in \cite{Berkowitz:2016jlq}.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{\label{app:energy1} Appendix A.4 Free energy results for SYM theories}
+
+
+
+Let's mention some useful integral relations : 
+\begin{equation}
+    \int_{0}^{\infty} \frac{x^{d-1}}{e^{x} -1} dx = \Gamma(d)\zeta(d) 
+\end{equation}
+
+\begin{equation}
+    \frac{7}{8}\int_{0}^{\infty} \frac{x^3}{e^{x} -1} dx = 
+    \int_{0}^{\infty} \frac{x^3}{e^{x}+1} dx = \frac{7\pi^4}{120} 
+\end{equation}
+
+\begin{equation}
+    \frac{3}{4}\int_{0}^{\infty} \frac{x^2}{e^{x} -1} dx = 
+    \int_{0}^{\infty} \frac{x^2}{e^{x}+1} dx = \frac{3 \zeta(3)}{2}
+\end{equation}
+
+\begin{equation}
+    \frac{1}{2}\int_{0}^{\infty} \frac{x}{e^{x} -1} dx = 
+    \int_{0}^{\infty} \frac{x}{e^{x}+1} dx = \frac{\pi^2}{12}
+\end{equation}
+
+
+In (3+1) dimensions, the fermionic degrees of freedom contribute 7/8 of bosonic ones. In sixteen supercharge case, 
+we get 
+
+\[ N^2 \left[ 8 + (7/8)8 \right] = 15N^2 \] 
+
+In general, total d.o.f in $d$ dimensions will be, 
+
+\[ 8 \Big( 2 - \frac{1}{2^{d-1}}\Big) N^2 \] 
+
+
+Black body radiation gives 
+
+\begin{equation} 
+E = \frac{VT^4 \pi^2}{30} ~~~\text{per d.o.f}
+\end{equation} 
+
+For $\mathcal{N}=4$ SYM in four dimensions, we have 
+
+\begin{equation} 
+E = 15N^2 \frac{VT^4 \pi^2}{30} 
+\end{equation} 
+
+
+And, entropy, S is 
+
+\begin{equation} 
+S = \frac{2\pi^2}{3} VT^3N^2 
+\end{equation} 
+
+and free energy F is , 
+
+\begin{equation}
+F = \frac{-\pi^2}{6} VT^4N^2 
+\end{equation} 
+
+This matches the expression for free energy by Klebanov and Tsetylin at zero $\lambda$. 
+%Also, see Zweibach Page 557
+
+
+Similar analysis in 3d gives, 
+
+\begin{equation}
+E =  \frac{14\zeta(3)}{\pi}VN^2T^3 
+\end{equation} 
+
+\[  =  \frac{\pi^2}{2}VT^4 N^2  \] 
+
+And, entropy, S is 
+
+\begin{equation}
+S = \frac{21\zeta(3)}{\pi}VN^2T^2
+\end{equation} 
+
+and free energy F is , 
+
+\begin{equation}
+F = \frac{-7\zeta(3)}{\pi}VN^2T^3
+\end{equation} 
+
+%Matches arxiv 9905030 
+The free energy density for ${\cal N}=4$  SYM in the weak coupling regime is :
+\begin{equation}
+    f = \frac{F}{V} = - \left(4 + 2n_{s} + \frac{7}{2} n_{f}\right) N^{2} \zeta(4) T^{4} \frac{1}{V} 
+\end{equation}
+Here, V is the unit volume of three sphere $S^{3}$ = $2\pi^2$. 
+Two interesting limits to this expression :
+
+\begin{itemize}
+\item Pure gauge : $n_{s} = 0$, $n_{f} = 0$ gives $f = - \frac{\pi^2}{45} N^{2}T^{4}$, which is the photon gas result ! 
+\item Full theory : $n_{s} = 6$, $n_{f} = 4$ gives $f = - \frac{\pi^2}{6} N^{2}T^{4}$
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section*{\label{app:dforms} Appendix A.5 Differential forms}
+
+The lattice construction of super Yang-Mills theories on the lattice makes use of special kind of fermions which are 
+integer forms rather than spinors. Here, we will briefly review the important results of differential forms. 
+See ~\cite{Zumino:1983rz} ~\cite{MTW} for further details. 
+
+A scalar function is called a \emph{0-form} and is defined as : 
+
+\beq
+df \equiv \frac{\partial f}{\partial x^{\mu}} dx^{\mu} 
+\eeq 
+
+
+Suppose we have a vector function $\Phi_{\mu}$, we construct a \emph{1-form} $\Phi$ as $ \Phi = |phi_{\mu} dx^{\mu}$. 
+
+
+and define, 
+
+\beq
+d \Phi \equiv \frac{\partial \Phi_{\mu}}{\partial x^{\nu}} dx^{\nu} \wedge dx^{\mu} 
+\eeq 
+
+The $\wedge$ denotes the wedge product defined as : 
+
+\beq
+dx^{\nu} \wedge dx^{\mu}  = - dx^{\mu}  \wedge dx^{\nu}
+\eeq
+
+
+We can interpret $d\phi$ as curl of $\Phi$. Generally, from an anti-symmetric tensor with p-indices, we can construct a \emph{p-form} as, 
+
+\beq
+\Phi = \Phi_{\mu_{1}, \mu_2, \cdots \mu_{p}} \Bigg( \frac{1}{p!} dx^{\mu_1} \wedge dx^{\mu_2} \wedge \cdots dx^{\mu_p} \Bigg)  
+\eeq
+
+It is obvious that we cannot have p-forms with $p > D$, where D is the number of dimensions. 
+
+\beq
+d\Phi = \partial_{\nu} \Phi_{\mu_{1}, \mu_2, \cdots \mu_{p}} \Bigg( \frac{1}{p!} dx^{\nu} \wedge dx^{\mu_1} \wedge dx^{\mu_2} \wedge \cdots dx^{\mu_p} \Bigg)  
+\eeq
+
+Let's take a \emph{p-form} $\alpha$ and \emph{q-form} $\beta$, then we have 
+
+\beq
+\alpha \beta = (-1)^{pq} \beta \alpha 
+\eeq 
+
+
+Then, 
+
+\beq
+d(\alpha \beta) = (d\alpha)\beta + (-1)^{p}\alpha d(\beta)
+\eeq 
+
+
+In SYM theory, the gauge potential is \emph{1-form} 
+
+\beq
+A = A_{\mu} dx^{\mu} 
+\eeq 
+
+and, field tensor F is defined schematically as \footnote{$F = \frac{1}{2} (\partial_{\mu} A_{\nu} - \partial_{\nu} A_{\mu} + [A_{\mu}, A_{\nu}]) dx^{\mu} dx^{\nu}$} 
+
+\beq
+F = dA + A^{2} 
+\eeq 
+
+with, 
+
+\bea
+dF & = d(dA + A^{2})  \\ 
+     & = d(AA) \\
+     & = d(A)A - AdA \\
+\eea 
+
+
+Also, 
+
+\beq
+[A, F] = [A, dA] = AdA - dAA 
+\eeq
+
+Adding above two, we get (Bianchi identity from forms) 
+
+\beq
+DF \equiv dF + [A, F ] = 0 
+\eeq
+
+where, $D (\cdot) = d (\cdot) + [A, (\cdot)]$. 
+
+
+\section*{\label{app:pfaffian1} Appendix A.6 Note on Pfaffian}
+
+Let M be a complex $d \times d$ matrix which is anti-symmetric (also known as skew-symmetric, $M^{T} = -M$), then we have $\text{det}M = 0$, if d = odd. Therefore, we will assume that $d = 2n$. 
+For an even-dimensional complex $ 2n \times 2n$ matrix, pfaffian is defined as, 
+
+\begin{equation}
+\text{pf(M)} = \frac{1}{2^n n!} ~ \epsilon_{i_{1}}\epsilon_{j_{1}} \cdots \epsilon_{i_{n}}\epsilon_{j_{n}}, 
+\end{equation}
+where, $\epsilon$ is the alternating tensor of rank 2n and sum over repeated indices is assumed. There also exists alternative definition, without normalization factors written as, 
+
+\begin{equation}
+\text{pf(M)} = \sum_{P} (-1)^{P}  M_{i_{1}}M_{j_{1}} \cdots M_{i_{n}}M_{j_{n}}, 
+\end{equation}
+Here, P is the set of permutations of $\{i_{1}, i_{2}, \cdots i_{2n}\}$ with respect to  $\{1, 2, \cdots, 2n\}$ such 
+that $ i_{1} < j_{1} \cdots i_{n} < j_{n} \cdots i_{2n} < j_{2n} $ and $ i_{1} < i_{2} \cdots i_{2n}$. P take values 
+$\pm 1$ for even and odd permutations. Note that if M is odd-dimensional matrix, pf(M) = 0. 
+
+Some corresponding theorems :
+
+\begin{itemize}
+\item For an arbitrary, $ 2n \times 2n$ matrix, Q, and complex anti-symmetric $ 2n \times 2n$ matrix, P, we have : $\text{pf}(QPQ^{T}) = \text{pf}(P) \text{det}(Q)$. 
+\item If M is a complex anti-symmetric matrix, then $\text{det} M = [\text{pf}(M)]^{2}$.
+\end{itemize}
+
+The relation between pfaffian and determinant is : $\text{pf}(M) = \pm \sqrt{\text{det}M}$. The sign is of utmost importance for our purposes and is 
+determined by the correct branch of the square root. 
+We can also define these in terms of path integral over Grassmann variables. Given an antisymmetric $ 2n \times 2n$ matrix M and $2n$ real 
+Grassmann variables $\eta_{i}$ where i = $\{1, 2, \cdots, 2n\}$, the pfaffian of M is given by :
+
+
+\begin{equation}
+\text{pf}(M) =  \int  d\eta_{1} d\eta_{2} \cdots d\eta_{2n} ~ \text{exp} \Bigg( \frac{-1}{2}\eta_{i} M_{ij} \eta_{j}\Bigg)
+\end{equation}
+
+
+Given an $ n \times n$ complex matrix A and $n$ pairs of complex Grassmann variables $\psi_{i}$ and $\overline{\psi_i}$ 
+where i = $\{1, 2, \cdots, n\}$ 
+
+\begin{equation}
+\label{eq:det_formula}
+\text{det}(A) =  \int  d\overline{\psi}_{1} d\psi_{1} \cdots d\overline{\psi}_{n} d\psi_{n} d\overline{\psi}_{n} ~ \text{exp}  \Big( \overline{\psi}_{i} A_{ij} \psi_{j}\Big)
+\end{equation}
+
+From the definition of pfaffian, we have
+\begin{align}
+\label{pfaffian0}
+[\text{pf}(M)]^{2}&=  \int  d\eta_{1} d\eta_{2} \cdots d\eta_{2n} ~ \text{exp} \Big( \frac{-1}{2}\eta_{i} M_{ij} \eta_{j}\Big) \int  d\chi_{1} d\chi_{2} \cdots d\chi_{2n} ~ \text{exp} \Big( \frac{-1}{2}\chi_{i} M_{ij} \chi_{j}\Big)\\
+                         &= \int  d\eta_{1} d\eta_{2} \cdots d\eta_{2n}  \int  d\chi_{1} d\chi_{2} \cdots d\chi_{2n} ~ \text{exp} \Big( \frac{-1}{2}\eta_{i} M_{ij} \eta_{j} -  \frac{-1}{2}\chi_{i} M_{ij} \chi_{j}\Big)\\
+                         &=(-1)^{n(2n+1)} \int d\chi_{1} d\eta_{1}\int d\chi_{2} d\eta_{2} \cdots \int d\chi_{2n} d\eta_{2n} ~ \text{exp} \Big( \frac{-1}{2}\eta_{i} M_{ij} \eta_{j} -  \frac{-1}{2}\chi_{i} M_{ij} \chi_{j}\Big) \\
+\end{align}
+
+We can now define, 
+\begin{equation}
+\psi_{i} \equiv \frac{1}{\sqrt{2}} (\chi_{i} + i \eta_{i})
+\end{equation}
+and $\overline{\psi}$. We have 
+\[ \int d\chi_{1} d\eta_{1}\int d\chi_{2} d\eta_{2} \cdots \int d\chi_{2n} d\eta_{2n}  \to (-1)^{n} d\overline{\psi}_{1}\psi_{1} \cdots d\overline{\psi}_{2n}\psi_{2n} \]
+using $ (-i)^{2n} = (-1)^n$, where -i is the Jacobian of the change of variables. Then we get, 
+\begin{equation}
+[\text{pf}(M)]^{2} =  \int  d\overline{\psi}_{1} d\psi_{1} \cdots d\overline{\psi}_{n} d\psi_{n} d\overline{\psi}_{n} ~ \text{exp}  \Big( \overline{\psi}_{i} A_{ij} \psi_{j}\Big)
+\end{equation}
+which is equal to \ref{eq:det_formula}. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

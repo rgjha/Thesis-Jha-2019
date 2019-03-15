@@ -1,0 +1,27 @@
+This is the format required by Syracuse University for the PhD thesis.
+
+1) All the figures are to be included inside ./Figures. This will mean that when
+you declare the figure (abc.png) in the tex file -> it should be like ./Figures/abc.png 
+
+The head.tex is the place where your title, name etc. will go. 
+
+2) I've organized the papers in various chapters inside the "Chapters" directory  
+
+3) The main file is - thesis.tex
+
+
+To run : open terminal and do "bash ./run_draft.sh"
+We compile it several times so that it picks up all references/links/hyperlinks etc. 
+
+
+---
+Raghav Govind Jha 
+2019
+---
+
+
+
+thesis --->  head1.tex -----> abstract.tex, ackno.tex, list_pubs.tex, conventions.tex
+
+										
+						

@@ -1,0 +1,381 @@
+\documentclass[12pt,oneside,openright]{book}   % This is required for SU 
+\usepackage{verbatim}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{bm}
+\usepackage{ragged2e}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{appendix}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{appendix}
+\usepackage{epsfig,amsmath,graphicx}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{rotating}
+\usepackage{tensor}
+\usepackage{lscape}
+\usepackage{bm}
+\usepackage{units}
+\usepackage{amsopn, amstext, wasysym}
+\usepackage{colonequals}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{xspace}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[bookmarksnumbered, bookmarksopen, breaklinks, colorlinks, linkcolor=blue, citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{bibunits}
+\usepackage{chngcntr}
+\usepackage{etoolbox}
+\usepackage{feynmp}	% Feynman diagrams
+\usepackage{url}
+\usepackage{alltt}
+\usepackage{ulem}
+\usepackage{epigraph} % For some quote
+\usepackage{pdfpages}
+\usepackage{amsthm}
+\usepackage{upgreek}
+\usepackage{slashed}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{caption}
+\usepackage{amsfonts}
+\usepackage{lscape}
+\usepackage[T1]{fontenc}
+\usepackage{blindtext}
+\usepackage{enumitem}
+\usepackage{xcolor}
+%\newcommand{\TODO}[1]{\textcolor{red}{\textbf{#1}}}
+
+
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{amsfonts,amsthm}
+\usepackage{bm,bbm}
+\usepackage{xcolor}
+\usepackage{lipsum}
+
+%\normalem
+\DeclareGraphicsExtensions{.eps,.pdf,.png}
+\usepackage{epstopdf}
+\usepackage{enumitem}
+\usepackage{dsfont} %for the identity element
+\usepackage{caption} 
+\usepackage{subcaption}
+
+\makeatletter
+\newenvironment{keeppage}{\let\thispagestyle=\@gobble}{}
+\makeatother
+\setlength{\footskip}{4\baselineskip}
+\setlength{\textwidth}{6.0in}
+\addtolength{\topmargin}{-0.75in}
+\setlength{\textheight}{8.5in}
+\setlength{\oddsidemargin}{.25in}
+\setlength{\evensidemargin}{.25in}
+\renewcommand{\baselinestretch}{1.5}
+
+\usepackage[bottom=1.15in]{geometry}
+
+
+\bibliographystyle{apsrev}
+%%%
+\pagestyle{plain}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ \scshape #1}}
+\AtBeginEnvironment{subappendices}{
+	\chapter*{Appendix}
+	\addcontentsline{toc}{chapter}{Appendices}
+	\counterwithin{figure}{section}
+	\counterwithin{table}{section}
+}
+\DeclareGraphicsRule{*}{mps}{*}{} % needed in order to include the Feynman graphs
+
+
+% % % % FOR CV
+\usepackage{array}
+\definecolor{lightgray}{gray}{0.8}
+\newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
+\newcolumntype{R}{p{0.8\textwidth}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+
+
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{verbatim}
+\usepackage{marvosym}
+\usepackage{cleveref}
+
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+
+ \usepackage{fontenc}
+\usepackage{enumitem}
+\setlist{nolistsep}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\usepackage[symbol*]{footmisc}
+\DefineFNsymbolsTM{myfnsymbols}{
+  \textasteriskcentered *
+  \textdagger    \dagger
+  \textdaggerdbl \ddagger
+  \textsection   \mathsection
+  \textbardbl    \|%
+  \textparagraph \mathparagraph
+}%
+\setfnsymbol{myfnsymbols}
+
+
+
+%\renewcommand{\familydefault}{\sfdefault}    % Comment this line to restore back to font used by previous fellas !
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\renewcommand{\tilde}{\widetilde} 
+\newcommand{\dbar}{d\mkern-6mu\mathchar'26}
+\newcommand{\arline}{\nonumber \\}
+\newcommand{\dslash}[1]{\displaystyle{\not} #1}
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+\def\fr{\frac}
+\newcommand{\TeV}{\,\mathrm{TeV}}
+\newcommand{\GeV}{\,\mathrm{GeV}}
+\newcommand{\MeV}{\,\mathrm{MeV}}
+
+
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+
+
+\newcommand{\TODO}[1]{\textcolor{red}{{\bf #1}}}
+\newcommand{\BUL}[1]{\tikz\draw[black,fill=black] (0,0) circle (.5ex);}
+
+
+% Shortcuts
+\newcommand{\cA}{\ensuremath{\mathcal A} }
+\newcommand{\cAb}{\ensuremath{\overline{\mathcal A}} }
+\newcommand{\Atilde}{\ensuremath{\widetilde A} }
+\newcommand{\Cbb}{\ensuremath{\mathbb C} }
+\newcommand{\cgrav}{\ensuremath{c_{\text{grav}}} }
+\newcommand{\cD}{\ensuremath{\mathcal D} }
+
+\newcommand{\Ftilde}{\ensuremath{\widetilde F} }
+\newcommand{\Ibb}{\ensuremath{\mathbb I} }
+\newcommand{\cN}{\ensuremath{\mathcal N} }
+\newcommand{\ve}{\mathbf{e}}
+\newcommand{\vn}{\mathbf{n}}
+\newcommand{\vy}{\mathbf{y}}
+\newcommand{\rtlat}{\ensuremath{r_{\tau,\, \text{lat}}} }
+\newcommand{\cO}{\ensuremath{\mathcal O} }
+\newcommand{\cP}{\ensuremath{\mathcal P} }
+\newcommand{\cQ}{\ensuremath{\mathcal Q} }
+\newcommand{\cU}{\ensuremath{\mathcal U} }
+
+\newcommand{\xbar}{\ensuremath{\overline x} }
+\newcommand{\al}{\ensuremath{\alpha} }
+\newcommand{\ga}{\ensuremath{\gamma} }
+\newcommand{\eps}{\ensuremath{\epsilon} }
+\newcommand{\lam}{\ensuremath{\lambda} }
+\newcommand{\laeff}{\ensuremath{\lam_{\text{eff}}} }
+\newcommand{\lalat}{\ensuremath{\lam_{\text{lat}}} }
+\newcommand{\hatbmu}{\widehat{\boldsymbol{\mu}}}
+\newcommand{\phitilde}{\ensuremath{\widetilde \phi} }
+\newcommand{\psibar}{\ensuremath{\overline\psi} }
+\newcommand{\Psibar}{\ensuremath{\overline\Psi} }
+\newcommand{\taubar}{\ensuremath{\overline\tau} }
+\newcommand{\KD}{{K\"ahler-Dirac }}
+\newcommand{\glN}{\ensuremath{\mathfrak{gl}(N, \Cbb)} }
+\newcommand{\nn}{\nonumber }
+\newcommand{\chidof}{\ensuremath{\mbox{$\chi^2/\text{d.o.f.}$}}}
+\newcommand{\pf}{\ensuremath{\text{pf}\,} }
+%\newcommand{\Tr}[1]{\ensuremath{\text{Tr}\left[ #1 \right]} }
+\newcommand{\vev}[1]{\ensuremath{\left\langle #1 \right\rangle} }
+\newcommand{\pderiv}[2]{\ensuremath{\frac{\partial #1}{\partial #2}} }
+\def\figheight{5.2 cm}
+
+\newcommand{\Tr}{\mathrm{Tr}}
+
+
+
+
+\newcommand{\ehat}{\ensuremath{\widehat e} }
+\newcommand{\muhat}{\ensuremath{\widehat \mu} }
+\newcommand{\Gdag}{\ensuremath{G^{\dag}} }
+
+
+
+\newcommand{\fot}{\left(f_1^2+2 f_2^2 \right)}
+\newcommand{\fott}{\left( f_1^2 + f_2^2 \right)}
+\newcommand{\sla}{\slash \hspace{-0.2cm}}
+\newcommand{\slam}{\slash \hspace{-0.25cm}}
+\newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\inner}[2]{\left\langle#1,#2\right\rangle}
+\newcommand{\BRa}[1]{\left\langle#1\right\vert}
+\newcommand{\ket}[1]{\left\vert #1\right\rangle}
+\newcommand{\BRaket}[2]{\left\langle#1\vert#2\right\rangle}
+\newcommand{\matelem}[3]{\left\langle#1\abs{#2}#3\right\rangle}
+\newcommand{\avg}[1]{\left\langle#1\right\rangle}
+\newcommand{\Real}{\mathbb R}
+\newcommand{\To}{\longrightarrow}
+\newcommand{\BX}{\mathbf{B}(X)}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\ex}[1]{\cdot10^{#1}}
+\newcommand{\Te}{T_{eff}}
+\newcommand{\oo}[1]{\textcolor{blue}{[{\bf OO}: #1]}}
+\newcommand{\SW}[1]{\textcolor{red}{[{\bf SW}: #1]}} 
+\def\eg{{\it e.g.~}}
+\def\etal{{\it et al.~}}
+\def\ie{{\it i.e.~}}
+\def\bphi{\bar{\phi}}
+\def\OMIT#1{{}}
+   
+\newcommand{\CM}{{\mathcal M}}
+\newcommand{\CK}{{\mathcal K}}   
+\newcommand{\idt}{\int d^2\theta}
+\newcommand{\idtb}{\int d^2\bar{\theta}}
+\newcommand{\idttb}{\int d^4\theta}
+\newcommand{\Z}{\mathcal{Z}}
+\newcommand{\half}{\frac{1}{2}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\Db}{\bar{\mathcal{D}}}
+\newcommand{\MM}{\mathcal{M}}
+\newcommand{\FF}{\mathcal{F}}
+\newcommand{\HH}{\mathcal{H}}
+\newcommand{\LL}{\mathcal{L}}
+\newcommand{\GG}{\mathcal{G}}
+\newcommand{\WW}{\mathcal{W}}
+\newcommand{\KK}{\mathcal{K}}
+\newcommand{\OO}{\mathcal{O}}
+\newcommand{\diag}{\mathrm{diag}}
+\newcommand{\sss}{{\scriptscriptstyle \Sigma}}
+
+
+\newcommand{\CR}{\notag \\}
+\newcommand{\leqn}[1]{(\ref{#1})}
+\def\nn{\nonumber}
+               
+\newcommand{\cL}{{\cal L}} 
+
+%%% Paper II needs some shortcuts below 
+
+\newcommand{\mn}{\ensuremath{{_{\mu\nu}}}}
+\newcommand{\amn}{\ensuremath{{_{\al\mu\nu}}}}
+\newcommand{\mc}[1]{\ensuremath{\mathcal{#1}}}
+\newcommand{\pa}[1]{\ensuremath{\partial_{#1}}}
+\newcommand{\ono}[1]{\overset{o}{#1}}
+\newcommand{\tcr}[1]{\textcolor{red}{#1}}
+\newcommand{\chamn}{\ensuremath{{C^\al_{\mu\nu}}}}
+\newcommand{\lamn}{\ensuremath{{\ono{L^\al_{\mu\nu}}}}}
+\newcommand{\qo}{\ensuremath{\ono{Q}}}
+\newcommand{\ro}{\ensuremath{\ono{R}}}
+\newcommand{\da}{\ensuremath{^\dagger}}
+
+\newcommand{\Ga}{\ensuremath{\Gamma}}
+\newcommand{\de}{\ensuremath{\delta}}
+\newcommand{\na}{\ensuremath{\nabla}}
+\newcommand{\sig}{\ensuremath{\sigma}}
+\newcommand{\bpsi}{\ensuremath{\bar{\psi}}}
+\newcommand{\lna}{\overleftarrow{\nabla}}
+\newcommand{\red}{\textcolor{red}}
+
+\newcommand{\hf}{\frac{1}{2}}
+
+
+
+\newcommand{\cF}{{\cal F}}
+\newcommand{\cFb}{{\overline{\cal F}}}
+\newcommand{\cDb}{{\overline{\cal D}}}
+\newcommand{\cUb}{{\overline{\cal U}}}
+
+\newcommand{\vx}{ {\bf x} }
+\newcommand{\hatbe}{\widehat{\boldsymbol {e}}}
+\newcommand{\SB}{{\bar{S}}}
+\newcommand{\CHI}{\ensuremath{\mbox{$\chi^2/\text{d.o.f.}$}}}
+
+\def\nn{\nonumber}
+\def\beq{\begin{equation}}
+\def\eeq{\end{equation}}
+\def\bea{\begin{eqnarray}}
+\def\eea{\end{eqnarray}}
+
+\newcommand{\RT}{{r_{\tau}}}
+\newcommand{\vac}{\mathcal{E}_{\mathrm{VAC}}}
+\newcommand{\Lt}{\mathrm{lim}}
+\newcommand{\vevE}[1]{\ensuremath{\left\langle #1 \right\rangle} }
+
+\def\bE{\mathbbm{e}}
+\def\bD{\mathbbm{D}}
+\def\ds{d_{\rm S}}
+\def\dh{d_{\rm H}}
+\def\dw{d_{\rm W}}
+\def\deh{\de_{\rm H}}
+\def\p{\partial}
+\def\bp{\bar{\partial}}
+\def\B{\Box}
+\def\cob{\color{blue}}
+\def\draftnote#1{{\bf [#1]}}
+\def\Veff{V_{\rm eff}}
+\newcommand{\cDbar}{\ensuremath{\overline{\mathcal D}} }
+\newcommand{\cFbar}{\ensuremath{\overline{\mathcal F}} }
+\newcommand{\cUbar}{\ensuremath{\overline{\mathcal U}} }
+\newcommand{\X}{\ensuremath{\textbf{x}}}
+\newcommand{\Y}{\ensuremath{\textbf{y}}}
+\def\sbar{\overline}
+\def\stilde{\widetilde}
+\begin{document}
+
+\frontmatter
+\pagenumbering{roman}
+\include{head1}     %%%%% calls abstract.tex, ackno.tex, list_pubs.tex, conventions.tex
+\mainmatter
+\pagenumbering{arabic}
+
+
+\chapter{\label{ch1}Introduction}
+\input{Chapters/ch1.tex}
+
+\chapter{\label{ch2}Large $N$ limit and holographic dualities}
+\input{Chapters/ch2.tex}
+
+\chapter{\label{ch3}Testing holography using the lattice super-Yang-Mills theory on a 2-torus}
+\input{Chapters/paper1.tex}
+
+\chapter{\label{ch4}Nonperturbative study of dynamical SUSY breaking in $\mathcal{N} = (2, 2)$ Yang-Mills theory}
+\input{Chapters/paper2.tex} 
+
+\chapter{\label{ch5}On the removal of the trace mode in lattice $\mathcal{N} = 4$ super Yang-Mills theory}
+\input{Chapters/paper3.tex} 
+
+\newpage 
+\chapter{Conclusions}
+\input{Chapters/conclu.tex}
+
+\newpage
+
+
+
+\appendix
+\appendixpage
+\addappheadtotoc
+\input{appendix}
+
+
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliography{thesis}
+\newpage
+\input{vita.tex}
+
+
+\end{document}
+\grid

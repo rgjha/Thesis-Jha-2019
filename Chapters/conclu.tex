@@ -1,0 +1,37 @@
+\epigraph{I think of my lifetime in Physics as divided into three periods. In the first period ...I was in the grip of the idea that 
+Everything is Particles...I call my second period Everything is Fields...Now I am in the grip of a new vision that...Everything 
+is Information\\ \vspace{3mm} - John A. Wheeler} 
+
+The main theme of the thesis was to explore super-Yang-Mills (SYM) theories in different dimensions on the lattice while preserving exact supersymmetry. Maximally supersymmetric theories play a role in understanding the aspects of holography in more detail. In two dimensions, we studied the phase diagram of the SYM theory and located the deconfinement transition which is related to the transition between two different black hole solutions using holography.  
+The horizon topology for four-dimensional black holes is fixed, but when we consider black holes in higher dimensions (such as in Type II supergravity theories), the horizon can have topology change which is holographically dual to the deconfinement transition in the gauge theory at finite temperatures. 
+We would also like to study the four-dimensional conformal $\mathcal{N}=4$ SYM 
+since most of the holographic predictions are for that theory, but this has been a major obstacle in the past few years even after a series of improvements in the lattice formulation of $\mathcal{N}=4$ SYM. 
+The numerical calculations for the four-dimensional theory are very expensive in the large $N$ limit
+even with a parallel code over the lattice volume. It is conceivable that constructing a code by parallelizing over $N$ will be possible in the future and will considerably improve our access to supergravity limits using lattice calculations. 
+The lower-dimensional SYM theories don't have the sign problem when the fermions have an 
+It must also be mentioned that the sign problem in Monte Carlo simulations is another major obstacle in the $\lambda > 5$ studies of SYM in four dimensions with large $N$. It seems that going to stronger coupling in four dimensions would require some new and path-breaking ideas. However, it is certainly possible, as we have shown, to extract interesting Physics from lower-dimensional SYM theories. The twisted lattice action for SYM theories in $d <4$ can still be studied for interesting holographic applications and 
+we will continue working on it in coming years. Apart from the thermodynamics of the dual $D2$-branes which is work in progress, we also hope to reproduce the prediction for the static potential in this three dimensional maximally supersymmetric Yang-Mills theory. In order to explore other numerical approaches to gauge theories (than Monte Carlo), 
+we have recently studied a two-dimensional non-Abelian gauge theory \cite{Bazavov:2019qih}. 
+
+On the other side, there has been a lot of progress to study the critical systems and their holographic
+implications using the tensor network constructions. 
+The tensor networks, such as MERA \cite{2008PhRvL.101k0501V} 
+have been shown to capture important aspects of holography and offers non-perturbative insights into the geometry of the bulk through the entanglement of the quantum state \cite{Swingle:2009bg, 2015PhRvL.115t0401E, 2011JSP...145..891E, 
+2018RvMP...90c5007N, VanRaamsdonk:2009ar, Headrick:2018ctr}.
+
+One of the recent ideas in holography has been the proposal of holographic entanglement entropy (HEE) 
+by Ryu-Takayanagi (RT) in 2006 for time-independent geometries. As an example, they considered a time-slice (constant time) 
+of $AdS_{3}$ and showed that the entropy matched the one calculated in two-dimensional CFT. 
+It was extended to time-dependent geometries by Hubeny, Rangamani, and Takayanagi (HRT) \cite{2007JHEP...07..062H}.
+The RT formula says that \begin{equation}
+S_{A} = \frac{\text{min.}(Area(\gamma_{A}))}{4G_{N}} \Bigg \vert_{\partial \gamma = \partial A} 
+\end{equation} 
+The equation above deserves some clarification. The expression tells us to consider only those minimal curves $\gamma$ which satisfies
+the homology \footnote{One can think about this in terms of 2-sphere $\mathbb{S}_{2}$. Jordan curve theorem says that any cycle on the sphere can be shrunk to a point. In this sense, all cycles/curves on this manifold satisfy homology condition} condition (\emph{i.e.} those which can be continuously deformed) such that boundary of $\gamma$ is the same as that of $A$. And in case, there is more than one such minimal curve, we choose the one with the smallest area. 
+Consider a black hole (whose regions are not simply connected). If we consider that A is the entire-space time, then the boundary of that is an empty set. How does one choose a minimal surface in this situation? $\gamma_{A}$ cannot be empty set since the space-time is not connected. It turns out that the minimal surface is the event horizon. Note that minimal surface is just a curve for $AdS_{3}$.
+So, for this case, the HEE formula is just the familiar Bekenstein-Hawking entropy formula. 
+If we consider four-dimensional SYM theories on $\mathbb{S}^{3}$ 
+at finite temperatures and large $N$, they are expected to undergo Hawking-Page phase transition which is dual to deconfinement transition as discussed above. When the field theory is at zero temperature, the entanglement entropy of the subsystems A $\&$ B is the same. At finite temperatures, the area of minimal curves change and we get a difference in entropy. It is also expected that entanglement entropy can serve as an order parameter. 
+
+It might be interesting to compute the EE on the lattice for supersymmetric theories
+in lower dimensions in the future. In all, this is a very exciting and interesting time for different numerical approaches to holography and understanding the features of quantum gravity working at the intersection of high energy theory, quantum information theory, and condensed matter theory.

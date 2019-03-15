@@ -1,0 +1,295 @@
+The investigations of supersymmetric gauge theories on a spacetime lattice are important for understanding the non-perturbative structure of such theories and in particular they can address the question of whether dynamical supersymmetry breaking takes place in such theories. This is a crucial question for efforts to construct supersymmetric theories which go beyond the Standard Model since the low energy world is clearly not supersymmetric while non-renormalization theorems typically ensure that supersymmetry cannot break in perturbation theory \cite{Grisaru:1979wc}.
+
+Unfortunately, there are a plethora of problems to overcome for lattice formulations of supersymmetric theories. Supersymmetry is a spacetime symmetry, which is generically broken by the lattice regularization procedure. Hence, the effective action of the lattice theory typically contains relevant supersymmetry breaking interactions. To achieve a supersymmetric continuum limit it is necessary to  fine tune the lattice couplings to these terms as the lattice spacing is reduced. Since generically there are very many such terms this is in practice impossible.  Some exceptions to this are - $\cN = 1$ super Yang-Mills where only a single coupling, the gluino mass, must be tuned. In addition, it has also been shown that fine-tuning to a supersymmetric
+continuum limit is also possible for $\cN = (2,2) $ in two dimensions. Using
+Wilson fermions, the only relevant parameter that has to be fine-tuned
+is the scalar mass since the bare gluino mass is an irrelevant parameter. The
+continuum value for the critical scalar mass is known up to one-loop
+order in lattice perturbation theory and that has already been employed in the numerical simulations. See Ref. \cite{Montvay:2001aj, Suzuki:2005dx,August:2018esp} for discussions and references therein. 
+
+The attempt to formulate supersymmetric theories on the lattice has a long history starting in Refs. \cite{Elitzur:1982vh, Banks:1982ut, Sakai:1983dg, Kostelecky:1983qu, Aratyn:1984bc, Scott:1983ha}. Recent approaches to this problem have focused on preserving a subalgebra of the full supersymmetry algebra which can protect the theory from some of these dangerous supersymmetry violating terms - for a review, see Ref. \cite{Catterall:2009it}. For supersymmetric theories with extended supersymmetry various supersymmetric lattice formulations exist. One approach that was pioneered by Cohen, Kaplan, Katz and \"Unsal in Refs. \cite{Cohen:2003xe, Cohen:2003qw, Kaplan:2005ta} is based on orbifolding and deconstruction of a supersymmetric matrix model. A second approach uses the idea of topological twisting to isolate appropriate nilpotent scalar supersymmetries that can be transferred to the lattice. Two independent discretization schemes have been proposed in this approach - that proposed by Sugino in Refs. \cite{Sugino:2003yb, Sugino:2004qd} where the fermions are associated with sites and  a geometrical approach in which fermions are generically associated with links \cite{Catterall:2003wd}\footnote{Yet another construction was formulated by D'Adda, Kanamori, Kawamoto and Nagata, \cite{DAdda:2005rcd} but was later shown to be equivalent to the orbifolding constructions when restricted to a sector containing a scalar supercharge \cite{Damgaard:2007eh}.}. In four spacetime dimensions, the geometrical approach has been used to construct  a supersymmetric lattice action for $\cN = 4$ SYM  \cite{Catterall:2005fd, Catterall:2014vka} and has been shown to be identical to the orbifolding constructions in Ref. \cite{Unsal:2006qp,Catterall:2007kn}. For an elaborate discussion on the relation between all these constructions, see Ref. \cite{Takimi:2007nn}. 
+
+In this chapter, we will study $\cN = (2, 2)$ super Yang-Mills (SYM) theory using the geometrical discretization scheme. It is the simplest two-dimensional supersymmetric theory that can be studied on the lattice. This theory is a particularly interesting theory in the continuum because of its exotic phases as discussed by Witten in Ref. \cite{Witten:1993yc}. This theory is conjectured to flow in the infrared (IR) to a conformal field theory. For recent developments, see Ref. \cite{Park:2016dpb}. The goal  of this chapter is to calculate the vacuum energy density accurately for this theory and hence determine whether supersymmetry breaking occurs. It is well known \cite{Witten:1981nf} that the vacuum energy can be thought of as an order parameter for  SUSY breaking. The spontaneous breaking of supersymmetry in this two-dimensional theory has been considered theoretically in Ref. \cite{Hori:2006dk} and numerically in Refs. \cite{Kanamori:2009dk, Kanamori:2007yx}. In \cite{Hori:2006dk} it was conjectured that in fact supersymmetry may break in this theory. Related work for $\cN = (2, 2)$ super QCD on the lattice was described in \cite{Catterall:2015tta}. In the context of orbifold lattice theories, it was shown in Ref. \cite{Matsuura:2007ec} that the vacuum energy of these theories does not receive any quantum corrections in perturbation theory leaving only non-perturbative mechanisms to drive supersymmetry breaking.
+
+In this four supercharge theory, unlike the sixteen supercharge case in two dimensions, the thermal instabilities at low temperatures are less severe and we can access relatively small temperatures without truncating the $U(1)$ degree of freedom as done in our recent work \cite{Catterall:2017lub, Jha:2017zad}. However, we have to use a small mass term to control the classical flat directions associated with the scalars. This small mass term was also implemented while exploring the phase structure at large $N$ using Sugino's lattice construction in Ref. \cite{Hanada:2009hq}. 
+
+The plan of this chapter will be as follows. In Sec. \ref{sec:theory} we review the lattice construction for $\cN = (2, 2)$ SYM on a two-dimensional square lattice. Then in Sec. \ref{sec:computation} we mention results on the phase of the pfaffian, discuss our procedure of extracting the ground state energy and comment on the $\cO(a)$ improved action we use for the analysis. We end the chapter with conclusions and brief discussion in Sec. \ref{sec:conclude}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Two-dimensional $\cN = (2, 2)$ Lattice SYM}
+\label{sec:theory}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The two-dimensional $\cN = (2, 2) $ SYM theory is the simplest supersymmetric gauge theory which admits topological twisting \cite{Witten:1988ze} and thus satisfies the requirements for a supersymmetric lattice construction following the prescription given in Refs. \cite{Catterall:2004np, Catterall:2006jw}, where the first numerical simulations of this construction were performed. The theory has global symmetry group $G = SO(2)_E \times SO(2)_{R_1} \times U(1)_{R_2}$, where $SO(2)_E$ is the two-dimensional Euclidean Lorentz rotation symmetry, $SO(2)_{R_1}$ is the symmetry due to reduced directions and $U(1)_{R_2}$ is the R-symmetry of the parent four-dimensional $\cN =1$ SYM theory. This theory can be twisted in two inequivalent ways (the A-model and B-model twists) depending on how we embed $SO(2)_E$ group into $SO(2)_{R_1} \times SO(2)_{R_2}$ the internal symmetry group. 
+
+We are interested in the B-model twist, which gives rise to a strictly nilpotent twisted supersymmetry charge. After twisting, the fields and supersymmetries are expressed as representations of the the twisted Euclidean Lorentz group
+\beq
+SO(2)' = {\rm diag} \Big( SO(2)_E \times SO(2)_{R_1} \Big).
+\eeq 
+The action of continuum $\cN = (2, 2)$ SYM takes the following $\cQ$-exact form after twisting
+\beq
+S = \frac{N}{2 \lam} \cQ \int d^2x\,\Psi,
+\label{2daction_twisted}
+\eeq
+where 
+%\beq
+%\Psi = \Tr \Big( \chi_{ab} \cF_{ab} + \eta [ \cDb_a, \cD_b ] - \frac{1}{2}\eta d \Big),
+%\eeq
+and $\lam = g^2 N$ is the 't Hooft coupling. We use an anti-hermitian basis for the generators of the gauge group with $\Tr (T_a T_b)  = - \delta_{ab}$.
+
+The four degrees of freedom appearing in the above action are just the twisted fermions $(\eta, \psi_a, \chi_{ab})$ and a complexified gauge field $\cA_a$. The complexified field is constructed from the usual gauge field $A_a$ and the two scalars $B_a$ present in the untwisted theory: $\cA_a = A_a + iB_a$.
+The twisted theory is naturally written in terms of the complexified covariant derivatives
+\beq
+\cD_a = \partial_a + \cA_a, \quad \quad \cDb_a = \partial_a + \cAb_a,
+\eeq
+and complexified field strengths
+\beq
+\cF_{ab} = [\cD_a, \cD_b], \quad \quad \cFb_{ab} = [\cDb_a, \cDb_b].
+\eeq
+The nilpotent supersymmetry transformations associated with the scalar supercharge $\cQ$ are given by
+\bea
+\cQ\; \cA_a &=& \psi_a, \nn \\
+\cQ\; \psi_a &=& 0, \nn \\
+\cQ\; \cAb_a &=& 0, \nn \\
+\cQ\; \chi_{ab} &=& -\cFb_{ab}, \nn \\
+\cQ\; \eta &=& d, \nn \\
+\cQ\; d &=& 0.
+\eea
+Performing the $\cQ$-variation on $\Psi$ and integrating out the auxiliary field $d$ yields
+%\bea
+%S &=& \frac{N}{2\lam} \int \Tr \Big( - \cFb_{ab} \cF_{ab} + \frac{1}{2} [ \cDb_a, \cD_a ]^2 \nonumber \\ 
+%&-&\chi_{ab} \cD_{\left[a\right.} \psi_{\left.b\right]} - \eta \cDb_a\psi_a \Big). 
+%\label{2d-twist_action}
+%\eea
+The prescription for discretization is straightforward. The complexified gauge fields are mapped to complexified Wilson links
+\beq
+\cA_a(x) \rightarrow \cU_a(\vn),
+\eeq
+living on the links of a square lattice with integer-valued basis vectors along two directions, 
+\beq
+\hatbmu_1 = (1, 0), \quad \quad \hatbmu_2 = (0, 1).
+\eeq
+They transform in the appropriate way under $U(N)$ lattice gauge transformations
+\beq
+\cU_a(\vn) \to G(\vn) \cU_a(\vn) G^\dagger(\vn+\hatbmu_a).
+\eeq
+Supersymmetry invariance then implies that $\psi_a(\vn)$ live on the same links and transform identically. The scalar fermion $\eta(\vn)$ is associated with a site and transforms the following way under gauge transformations
+\beq
+\eta(\vn) \to G(\vn) \eta(\vn) G^\dagger(\vn).
+\eeq
+The field $\chi_{ab}(\vn)$, as a 2-form, should be associated with a plaquette. In practice, we introduce diagonal links running through the center of the plaquette and choose $\chi_{ab}(\vn)$ to lie with opposite orientation along those diagonal links. This orientation ensures gauge invariance. Fig. (\ref{fig:lattice-unit-cell}) shows the unit cell of the lattice theory with field orientation assignments. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=0.95\textwidth]{Figures/lat.pdf}
+\end{center}
+\caption{\label{fig:lattice-unit-cell}The unit cell and field orientations of the two-dimensional $\cN = (2, 2)$ lattice SYM theory.}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The continuum covariant derivatives are replaced by covariant difference operators and they act on the twisted fields the following way 
+\bea
+\cDb^{(-)}_a f_a(\vn) &=& f_a(\vn) \cUb_a(\vn) - \cUb_a(\vn - \hatbmu_a) f_a(\vn - \hatbmu_a), \nonumber  \\ 
+\cD^{(+)}_a f_b(\vn) &=& \cU_a(\vn) f_b(\vn + \hatbmu_a) - f_b(\vn) \cU_a(\vn + \hatbmu_b). \nonumber 
+\eea
+The lattice field strength is given by $\cF_{ab}(\vn) = \cD^{(+)}_a \cU_b(\vn)$, and is anti-symmetric. It transforms like a lattice 2-form and yields a gauge invariant loop on the lattice when contracted with $\chi_{ab}(\vn)$. Similarly, the term involving the covariant backward difference operator, $\cDb^{(-)}_a \cU_a(\vn)$, transforms as a 0-form or site field and hence can be contracted with the site field $\eta(\vn)$ to yield a gauge invariant expression.
+
+The lattice action is $\cQ$-exact
+\bea
+S &=& \frac{N}{2 \lam} \sum_{\vn} \Tr \cQ \Big( \chi_{ab}(\vn) \cD_a^{(+)} \cU_b(\vn) \nonumber \\  
+&+& \eta(\vn) \cDb_a^{(-)}\cU_a(\vn) - \hf \eta(\vn) d(\vn) \Big).
+\eea
+Applying the $\cQ$ transformation on the lattice fields and integrating out the auxiliary field $d$, we obtain the gauge invariant and $\cQ$ supersymmetric lattice action
+\bea
+\label{eq:2d-latticeaction}
+S &=& S_B + S_F,
+\eea
+where the bosonic action is
+
+%\begin{equation}
+%S_{B} = \frac{N}{2 \lambda} \sum_{\vn} \Tr \Big( \cF_{ab}^\dagger(\vn) \cF_{ab}(\vn) + \hf \Big(\cDb_a^{(-)} \cU_a(\vn)\Big)^2\Big), \nonumber 
+%\end{equation}
+
+and the fermionic piece
+%\begin{equation}
+%S_F = \frac{N}{2 \lam} \sum_{\vn} \Tr \Big( - \chi_{ab}(\vn) \cD^{(+)}_{[a} \psi_{b]}(\vn) - \eta(\vn) \cDb^{(-)}_a \psi_a(\vn) \Big). \nonumber 
+%\end{equation}
+It was correctly noted in Ref. \cite{Kanamori:2008bk} that for simulation purposes, we need to add a small supersymmetry breaking scalar potential to stabilize the $SU(N)$ flat directions of the theory. We add a single trace deformation term to the action in Eq. (\ref{eq:2d-latticeaction}) as, 
+%\beq
+%\label{eq:single_trace}
+%S_{\rm soft} = \frac{N}{2 \lam} \mu^2 \sum_{\vn,\ a} \Tr \bigg( \cUb_a(\vn) \cU_a(\vn) - \Ibb_N \bigg)^2,
+%\eeq
+with a tunable parameter $\mu$. Exact supersymmetry at $\mu = 0$ ensures that all $\cQ$-breaking terms vanish as some (positive) power of $\mu$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Lattice Simulations}
+\label{sec:computation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+We simulate the theory on a square lattice with anti-periodic boundary conditions (aPBC) for fermions in the temporal direction. The physical size of the lattice is $\beta \times L$, where $\beta$ is the dimensionful temporal extent and $L$ the dimensionful spatial extent. We denote the lattice spacing as $a$ while $N_t$ is the number of lattice sites along the temporal direction and $N_x$ number of sites along the spatial direction. Thus the dimensionful quantities are $\beta = a N_t$ and $L = a N_x$. In our case the lattice is symmetric: $N_t = N_x$. 
+
+In two dimensions, the 't Hooft coupling $\lambda$ is dimensionful and we can construct the dimensionless temporal circle size, 
+\beq
+r_\tau = \sqrt{\lambda} \beta.
+\eeq
+The quantity $r_\tau$ also serves as the effective coupling. Its inverse is the dimensionless temperature $t$. Since we have only considered symmetric lattices, the spatial circle size is the same as the temporal circle size, $r_x = r_\tau$. As discussed above we use a small mass parameter $\mu = \zeta \frac{r_\tau}{N_t} = \zeta \sqrt{\lambda} a$ to regulate potential divergences associated with the flat directions. As for case of sixteen supercharge theory in two dimensions \cite{Catterall:2017lub, Jha:2017zad}, we extrapolate all our results to $\mu = 0$.
+
+To examine the question of supersymmetry breaking we consider the system at non-zero temperature and subsequently take the temperature to zero {\it after} taking the limits $\zeta \to 0$ and $a \to 0$. A non-zero value of the vacuum energy would indicate supersymmetry breaking. Notice that if supersymmetry is intact in a finite volume, it is unbroken even in infinite volume \cite{Witten:1982df}.
+
+We compute the ground state energy density in two-dimensional $\cN = (2, 2)$ SYM using the publicly available code presented in Ref. \cite{Schaich:2014pda}. In the four-supercharge case, the expression for the \emph{effective} bosonic action, which is related to the dimensionless energy density we measure, was first given in Ref. \cite{Catterall:2008dv}. 
+
+We can have two different definitions for the ground state energy based on whether we take the massless (scalar mass) limit followed by the continuum limit or vice versa. In both cases, the zero temperature limit is taken at the end. Thus, we have 
+\beq
+\label{eq:energy1} 
+\frac{\vac^{\prime}}{N^2 \lambda} = \lim_{\beta\to\infty} ~~\lim_{\mathrm{a} \to 0} ~~\lim_{\mu \to 0} \Bigg \langle \mathrm{VAC} \Bigg | \left( \frac{-2\SB}{N^2 \lam} \right) \Bigg | \mathrm{VAC}  \Bigg \rangle,
+\eeq
+and 
+\beq
+\label{eq:energy2} 
+\frac{\vac}{N^2 \lambda} = \lim_{\beta\to\infty} ~~ \lim_{\mu \to 0} ~~\lim_{\mathrm{a} \to 0} \Bigg \langle \mathrm{VAC} \Bigg | \left( \frac{-2\SB}{N^2 \lam} \right) \Bigg | \mathrm{VAC}  \Bigg \rangle,
+\eeq
+where, 
+\beq
+\SB = \frac{1}{L \beta} \left( S_B - \frac{3}{2} N^2 N_x N_t \right).
+\eeq 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[htb]
+\begin{center} 
+\includegraphics[width=0.95\textwidth]{Figures/mass_U3_rt9.pdf}
+\end{center}
+\caption{\label{fig:mass_U3}The $\zeta^2 \to 0$ extrapolation of the ground state energy density for $U(3)$, $\RT = 9$.}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[htb]
+\begin{center} 
+\includegraphics[width=0.95\textwidth]{Figures/cont_U3_rt9.pdf}
+\end{center}
+\caption{\label{fig:cont_U3}The $(a/L)^2 \to 0$ extrapolation of the ground state energy density for $U(3)$, $\RT=9$.}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+We provide the simulation data in Tables (\ref{tab:actionU2}) and (\ref{tab:actionU3}). It is clear from the tables that the order of taking these \emph{different} limits is consistent within errors and we will quote results only for $\frac{\vac}{N^2 \lambda}$.
+\begin{figure}[htb]
+\begin{center} 
+\includegraphics[width=0.95\textwidth]{Figures/2dq4_sign.pdf}
+\end{center}
+\caption{\label{fig:pfaffian1}Pfaffian phase fluctuations, $1 - \vev{\cos\phi}$, for some U(3) ensembles used in this work. We have measured the phase for three couplings used in this work. We keep the mass parameter, $\zeta = 0.50$ for all couplings. Note that at sufficiently weak couplings, large lattices are not needed to control sign problem.}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+We integrate out the fermions to produce a Pfaffian, which in turn is represented by square root of a determinant. The fermion determinant with a fractional power can be simulated using Rational Hybrid Monte Carlo (RHMC) algorithm \cite{Clark:2004cp}. In the simulations we used the absolute value of the Pfaffian. The phase of the Pfaffian may be incorporated back in the expectation values of observables by re-weighting although as will be seen in the next section the measured Pfaffian phase is always small in our simulations.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Phase of the Pfaffian}
+\label{sec:pfaf} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The phase of the Pfaffian was studied in Ref. \cite{Kanamori:2007ye} for two different lattice constructions. Soon after, the phase of Pfaffian for the construction we use here was calculated in Ref. \cite{Catterall:2011aa} and it was observed that it vanishes as one approaches the continuum limit. It was correctly noted in Ref. \cite{Hanada:2010qg} that the absence of the sign is a property of the correct continuum limit. In this chapter, we will study the phase of the Pfaffian at stronger couplings than have been explored before and on much larger lattices using the parallel code developed in Ref. \cite{Schaich:2014pda}. We show that the phase fluctuations become small and vanish as we take the continuum limit. This is true for all couplings we have considered. However, on a fixed lattice volume, the magnitude of the phase fluctuations grows with the coupling. This implies that accessing stronger couplings ($t \le 1/9$) requires the use of larger lattices if we are to avoid a sign problem. We show these results in Fig. \ref{fig:pfaffian1}.
+\subsection{Ground State Energy}
+\label{sec:ground-state-e}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+We now present our simulation results on the ground state energy of the theory. We would like to extrapolate the lattice data for ground state energy density $\frac{\vac}{N^2 \lambda}$ to zero temperature after taking the continuum ($a \to 0$) and massless ($\mu \to 0$) limits. A representative example of the mass extrapolations and continuum extrapolations are shown in Fig. \ref{fig:mass_U3} and Fig. \ref{fig:cont_U3}, respectively.  At the end, we perform three types of extrapolations in temperature - using power law, exponential, and constant fits. 
+
+We show the vacuum energy density vs inverse temperature for $U(2)$ in Fig.~\ref{fig:beta_U2}.
+Extrapolating $\RT\to\infty$ using the range $\RT \in [6, 9]$
+\beq
+\frac{\vac}{N^2 \lambda} = \left\{
+  \begin{array}{ll}
+    0.06(4), ~ ~ \CHI = 0.40 & : \text{power law fit} \\      
+    0.06(2), ~ ~ \CHI = 1.26 & : \text{exponential fit}\\ 
+   0.08(2), ~ ~ \CHI = 0.63 & : \text{constant fit}\\  
+  \end{array}
+\right.
+\eeq
+In Fig.~\ref{fig:beta_U3} we show the vacuum energy density vs inverse temperature for gauge group $U(3)$.
+Extrapolating $\RT\to\infty$ using the range $\RT \in [6, 9]$
+\beq
+\frac{\vac}{N^2 \lambda} = \left\{
+  \begin{array}{ll}
+    0.05(2), ~ ~ \CHI = 0.11 & : \text{power law fit} \\  
+    0.04(4), ~ ~ \CHI = 0.11 & : \text{exponential fit} \\ 
+    0.05(2), ~ ~ \CHI = 0.06 & : \text{constant fit} \\ 
+  \end{array}
+\right.
+\eeq
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+\begin{center} 
+\includegraphics[width=0.95\textwidth]{Figures/beta_U2.pdf}
+\end{center}
+\caption{\label{fig:beta_U2}The $\beta \to \infty$ extrapolation of the ground state energy for $U(2)$ gauge group. The inset zooms in to show the low-temperature regime. For details, see Table (\ref{tab:actionU2}).}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+\begin{center} 
+\includegraphics[width=0.95\textwidth]{Figures/beta_U3.pdf}
+\end{center}
+\caption{\label{fig:beta_U3}The $\beta \to \infty$ extrapolation of the ground state energy for $U(3)$ gauge group. The inset zooms in to show the low-temperature regime. For details, see Table (\ref{tab:actionU3}).}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+We note that the errors in our results do not allow us to make conclusive statements about the exact form of the energy dependence on the temperature. Both power, exponential and constant fitting functions yield
+comparable results consistent with vanishing ground state energy.  Our
+calculation puts an upper bound on the dimensionless energy density using the constant fit at $\frac{\vac}{N^2 \lambda}=0.08(2)$ for U(2) and $\frac{\vac}{N^2 \lambda}=0.05(2)$ for U(3).
+
+While this work was in progress results were presented on the tree-level $\cO(a)$ improvement of the Sugino's lattice action for two-dimensional $\cN = (2, 2)$ SYM \cite{Hanada:2017gqc}.
+We note that our lattice formulation already possesses this improvement which we see in Fig.~\ref{fig:cont_U3} and in
+Table \ref{table:order_a}.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[htbp]
+   \vspace{10mm}
+      \centering
+ \begin{tabular}{cccccc}
+\hline \hline
+\ \ $\zeta$ \ \ & \ \ $\propto (a/L)^{p} $ \ \ & \ $\propto (a/L)^{p} + c $ \\
+\hline
+0.40 & 1.86(9) & 1.76(22) & \ \ \\
+0.50 & 1.76(6) & 1.60(15) & \ \ \\
+0.55 & 1.79(5) & 1.90(11) &  \ \ \\
+0.60 & 1.74(4) & 1.70(11) &   \ \ \\
+\hline
+  %\vspace{4mm}
+  
+  
+  
+\end{tabular}
+      \centering
+ \begin{tabular}{cccccc}
+
+\hline \hline
+\ \ $\zeta$ \ \ & \ \ $\propto (a/L)^{p} $ \ \ & \ $\propto (a/L)^{p} + c $ \\
+\hline
+0.40 & 1.73(10) & 1.58(24) & \ \ \\
+0.50 & 1.71(7) & 1.74(17) & \\
+0.55 & 1.69(6) & 1.57(14) &  \ \ \\
+0.60 & 1.78(5) & 1.98(12) &   \ \ \\
+\hline
+\end{tabular}
+
+\caption{\label{table:order_a}Numerical results showing that our action is effectively $\cO(a)$ improved. We measure the deviation of the bosonic action/site from its supersymmetric value of $\frac{3}{2}N^2$ and fit it to power law. The first column shows the soft-mass parameter, $\zeta$, we use to regulate the flat directions. The second column is the obtained value of the power, $p$, constraining vanishing intercept, the third is the obtained value of the power, $p$, \emph{without} constraining the intercept. We quote results from one of the couplings used in this work, $\RT$ = 6. On the top, we show the results with $U(3)$ and with $U(2)$ at the bottom. The fits are very good with maximum \CHI = 2.80.}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusions}
+\label{sec:conclude}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In this chapter we have examined the possibility of dynamical supersymmetry breaking in two-dimensional $\cN = (2, 2)$ SYM through lattice simulations. The lattice theory is exact supersymmetric, gauge invariant, local, and doubler free.
+We find an upper bound on the vacuum energy density of $\frac{\vac}{N^2 \lambda}=0.08(2)$ and $\frac{\vac}{N^2 \lambda}=0.05(2)$ for U(2) and U(3) respectively. The energy
+density is statistically consistent with zero and hence with the absence of dynamical supersymmetry
+breaking. It would be interesting to examine the spectrum in future work to confirm the absence of spontaneous supersymmetry
+breaking perhaps by searching for signals of a Goldstino as was done in \cite{Catterall:2015tta}. We have also measured the phase of the Pfaffian on all our ensembles and find that while the average
+phase grows with coupling it decreases as we take the continuum limit in agreement with theoretical expectations.
+In practice, it is numerically small for all our ensembles. 
+The question of supersymmetry breaking in this model was addressed before in \cite{Kanamori:2009dk}. Our current work, in addition to using a different lattice action, has employed stronger couplings (and hence
+lower temperatures) and much smaller lattice spacings. For example, the lowest temperature used in the earlier work was $t = 1/6$ as compared to $t = 1/9$ in this work while the largest lattice used here is $96\times 96$ as compared
+to $30\times 12$ in the earlier study.
