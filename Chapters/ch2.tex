@@ -263,20 +263,21 @@ So more precisely, one should talk about ~`master orbit of the gauge group'.
 \item For the classical analogy, we have a well-defined method of finding the single field configuration, i.e by solving classical equations of motion. 
 But finding the master field is not a panacea, one does not have a well-defined prescription yet.
 \end{itemize} 
-Even after not being able to solve say for ex: large $N$ QCD in four dimensions, this is an amazing reformulation of the problem of summing only all planar graphs. 
+%Even after not being able to solve say for ex: large $N$ QCD in four dimensions, this is an amazing reformulation of the problem 
+%of summing only all planar graphs.  
 
 
 
 
 
-\section{AdS/CFT correspondence} 
+\section{Toward the AdS/CFT correspondence} 
 The study of non-perturbative formulations of superstring theories is greatly facilitated by the idea of AdS/CFT correspondence. AdS/CFT is 
 a strong/weak duality between two theories first proposed by Maldacena in 1997. 
 It is inspired by the structure and symmetries of the space-time and the conformal field theory (CFT). 
 This conjecture is again an example of how interesting the large $N$ limit of gauge theories can be and since we have already discussed 
 that in the previous section, we can start to formally discuss the holographic conjecture (or AdS/CFT correspondence). We will first review 
 some useful concepts from String theory for stating this conjecture and then discuss the decoupling limit which is central to the idea of this 
-correspondence. 
+correspondence. We will then formally define this conjecture in \ref{sec-ads} 
 
 
 
@@ -325,8 +326,8 @@ The bulk parts represent the SUGRA and brane then represents $\mathcal{N}=4$ SYM
 This is only one half of the story. Another half can be seen by looking at the extremal $p$-brane 
 and noting that the low-energy limit is similar to taking the near-horizon limit and in that case the 
 factorization gives us like before SUGRA in the bulk
-but the other part gives the $AdS_{5} \times S_{5}$. 
-Therefore, in the large $N$ limit, $\mathcal{N}=4$ SYM on $R^{3,1}$ is dual to Type IIB SUGRA on $AdS_{5} \times S_{5}$. 
+but the other part gives the AdS$_5 \times S_5$.
+Therefore, in the large $N$ limit, $\mathcal{N}=4$ SYM on $R^{3,1}$ is dual to Type IIB SUGRA on AdS$_5 \times S_5$.
 The limit and the complete steps are shown in Fig.(\ref{fig:AdS1}). 
 
 \begin{figure}[h!]
@@ -341,14 +342,14 @@ The limit and the complete steps are shown in Fig.(\ref{fig:AdS1}).
 \subsection{Symmetries, degrees of freedom, and holographic dictionary} 
 
 AdS/CFT correspondence can also be loosely suggested based on the following observation. First note that 
-the line element of the $AdS$ space  in $(d+1)$-dimensions is given by, 
+the line element of the AdS space  in $(d+1)$-dimensions is given by,
 \beq
 ds^2\,=\,{L^2\over z^2}\,(-dt^2+d\vec x^2+dz^2)\,\,,
 \label{AdS_metric}
 \eeq
 The constant $L$ is a global factor in (\ref{AdS_metric}), which we will refer to as the anti-de Sitter radius. 
-The (conformal) boundary of the $AdS$ space is located at $z=0$. Notice that the metric (\ref{AdS_metric}) is singular at $z=0$. 
-This means that  we will have to introduce a regularization procedure in order to define quantities in the $AdS$ boundary.
+The (conformal) boundary of the AdS space is located at $z=0$. Notice that the metric (\ref{AdS_metric}) is singular at $z=0$.
+This means that  we will have to introduce a regularization procedure in order to define quantities in the AdS boundary.
 
 
 The isometries of (d+1)- dimensional anti-De-Sitter space is $SO(d,2)$ symmetry which is the same as the conformal symmetry of \
@@ -412,48 +413,40 @@ Thus, taking into account the definition of the Planck length in (\ref{Planck_l_
 \beq
 {\rm classical\,\, gravity\,\, in\,\, AdS}\to \Big({L\over l_P}\Big)^{d-1} \gg 1\,\,,
 \eeq
-which happens when the $AdS$ radius is large in Planck units. Since the scalar curvature goes like $1/L^2$, the curvature 
+which happens when the AdS radius is large in Planck units. Since the scalar curvature goes like $1/L^2$, the curvature
 is small in Planck units. Thus, a QFT has a classical gravity dual when $c_{QFT}$ is large, or equivalently if there is a large 
 number of degrees of freedom per unit volume or a large number of species (which corresponds to large $N$ for $SU(N)$ gauge theories). 
 
 
 
-\section{Lower dimensional SYM theories and their holographic duals}
+\section{\label{sec-ads}AdS/CFT and holographic dualities for lower dimensional maximally supersymmetric SYM theories.}
 
 The AdS/CFT correspondence (also gauge/gravity duality) is a conjecture which relates
 the string theory or M-theory on a background of the form 
-$ AdS_{d+1} \times S^{'} $, where $ AdS_{d+1}$ has an 
-space-time dimension $\textit{d+1}$, and $S^{'}$ is compactified manifold 
-(called ~`spheres'). The conjecture tells that this theory is dual to conformally invariant quantum field theory 
-in space-time of dimension $\textit{d}$, which is, in fact, the boundary of the $AdS_{d+1}$. This conjecture can be 
+AdS$_{5} \times S_{5} $, where AdS$_{d+1}$ has an
+space-time dimension $d+1$, and $S_{5}$ is compactified manifold 
+(called five-spheres). The conjecture tells that this theory is dual to conformally invariant quantum field theory 
+in space-time of four dimensions, which is, in fact, the boundary of the AdS$_{5}$. This conjecture can be
 viewed as a natural realization of the holographic principle, which states that all of the information inside a black hole should 
-be encoded in the 
-boundary of it, the so-called the event horizon of the black hole. A concrete possibility of holography was first 
+be encoded in the boundary of it, the so-called the event horizon of the black hole. A concrete possibility of holography was first 
 proposed by ~`t Hooft in \cite{tHooft:1993dmi} and then subsequently by Susskind in \cite{Susskind:1994vu}.
 
 Let us consider $N$-parallel D$p$-branes separated by some distances which we refer by $r$. At 
 low energies, the theory on the D$p$ brane decouples from the bulk. It is more convenient to
 take the energies fixed and take :
-\[ \alpha^{\prime} \rightarrow 0  \hspace{8mm} ; \hspace{8mm} U \equiv \frac{r}{\alpha^{'}} = \text{fixed} \hspace{8mm} 
-; \hspace{8mm} g^{2}_{YM} = \frac{1}{2\pi} \frac{g_{s}}{\alpha^{'}} = \text{fixed}   \]
+\[ \alpha^{\prime} \rightarrow 0  \hspace{8mm} ; \hspace{8mm} U \equiv \frac{r}{\alpha^{\prime}} = \text{fixed} \hspace{8mm}
+; \hspace{8mm} g^{2}_{YM} = \frac{1}{2\pi} \frac{g_{s}}{\alpha^{\prime}} = \text{fixed}   \]
 here, $\alpha^{\prime}$ is the string tension and $g_{s}$ is the string coupling. The 
 second condition ensures that the mass of the stretched strings is fixed. This limit is known as ~`decoupling limit'.  
 At a given energy scale, U, the effective dimensionless coupling constant in 
 the corresponding super Yang-Mills theory is $ g_{eff}^{2} \approx g_{YM}^{2} NU^{p-3}$. 
 Therefore, perturbative calculations in super Yang-Mills can be trusted in the region 
-
-
-
 \begin{equation}
  g^2_{eff} \ll 1 \hspace{10mm} \begin{cases}
      U\gg (g^2 N)^{1/(3-p)} ; \hspace{8mm}p<3     \\
     U \ll 1/(g^2 N)^{1/(p-3)} ; \hspace{5mm} p>3  
       \end{cases}
     \end{equation} 
-
-
-
-%This is study of the maximally supersymmetric [consisting of sixteen supercharges]  U(N) Yang-Mills theory with coupling $g_{YM}$. 
 In the large $N$ 't Hooft limit, the natural coupling becomes $ \lambda = N g_{YM}^{2}$. The bosonic part of the action is given as,
 \begin{equation}
 S_{B} = \frac{N}{\lambda}  \int dt ~ dx^p \mathrm{Tr}\left[  - \frac{1}{4} F_{\mu\nu}^2 - \frac{1}{2} D^\mu \Phi^I D_\mu \Phi^I + \frac{1}{4} \left[ \Phi^I , \Phi^J \right]^2  \right]
@@ -466,15 +459,13 @@ where $x^\mu$ with $\mu = 0, \ldots, p$ are the world volume coordinates with ti
 spatial coordinates $x^i$ with $i=1,\ldots,p$. Then $\Phi^I$ with $I = 1+p, \ldots, 9$ are the spacetime 
 scalars representing the transverse degrees of freedom of the branes. They are $N \times N$ Hermitian 
 matrices transforming in the adjoint representation of the gauge group. The fermion $\Psi$ is a $(1+9)$-dimensional 
-Majorana-Weyl spinor and also transforms in the adjoint 
-%and the collection $\{ \gamma^\mu, \gamma^I \}$ are the 
-%appropriate $SO(1,9)$ gamma matrices. 
+Majorana-Weyl spinor and also transforms in the adjoint. 
 The field strength is defined as usual, $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu + i [ A_\mu , A_\nu ]$, and $D_\mu = \partial_\mu - i [ A_\mu, \cdot]$, with $A_\mu$ 
 the gauge field potential transforming in the adjoint. 
 
-The gauge/gravity duality \cite{Itzhaki:1998dd} 
+The general gauge/gravity duality \cite{Itzhaki:1998dd} 
 states that at finite temperature there is a dual closed IIA ($p$ even) or IIB ($p$ odd)
- string theory description of this gauge theory in terms of the decoupling limit of thermal Dp-branes. 
+string theory description of this gauge theory in terms of the decoupling limit of thermal Dp-branes. 
  In the large $N$ 't Hooft limit this string theory description may reduce to one in IIA or IIB supergravity. 
 In addition, the $(p+1)$-form potential carries the charge of the $N$ Dp-branes. Here $t$ and $x^i$ 
 are the Dp-brane $(p+1)$-dimensional world volume coordinates. The radial coordinate of the metric 
@@ -487,15 +478,12 @@ The black brane is a classical solution to the supergravity (low energy supersym
 description of superstring theory). Additionally, in 
 order to trust the supergravity solution, we need the curvature and 
 dilaton to be very small, which results in the following inequality, 
-
 \begin{equation}
 1 \ll g_{eff}^{2} \ll N^{4/(7-p)} 
 \end{equation}
 We directly see that perturbative super-Yang-Mills and supergravity descriptions do not overlap. 
 The radius of curvature $R$ goes as,
-$
-\alpha' /R^2 \sim \left( U / \lambda^{1/(3-p) } \right)^{\frac{3-p}{2} } 
-$. 
+$\alpha' /R^2 \sim \left( U / \lambda^{1/(3-p) } \right)^{\frac{3-p}{2} }$. 
 We will consider the large $N$ 't Hooft limit, where it is natural to take,
 \begin{eqnarray}
 N \to \infty \; , \qquad \frac{U}{\lambda^{1/(3-p)}}  \; , \; \frac{U_0}{\lambda^{1/(3-p)}}  \sim \mathrm{finite}
@@ -509,47 +497,13 @@ U  \; , \; U_0 \ll \lambda^{1/(3-p)} \; .
 \end{eqnarray}
 We emphasise that we require these quantities to be small, but finite, in the large $N \to \infty$ limit. 
 
-
-\begin{comment} 
-The expectation value for the energy density $\epsilon$ of MSYM is given by the energy density of the 
-Dp-brane solution above extremality, and yields, \begin{eqnarray}
-\frac{  \epsilon  }{ \lambda^{(1+p)/(3-p)} } = b_p N^2  \left( \frac{ U_0 }{ \lambda^{1/(3-p)} } \right)^{7-p} \; , \quad 
-b_p = \frac{8 (7-p) \pi^2}{9-p} a_p 
-\end{eqnarray}
-as deduced either from the Dp-brane solutions before taking the decoupling limit, or else from holographic 
-renormalization that has been developed for these non-conformal Dp-brane geometries  Defining the 
-dimensionless temperature $t = T / \lambda^{1/(3-p)}$ then semiclassical black hole thermodynamics yields,
-\begin{eqnarray}
-\frac{ U_0 }{ \lambda^{1/(3-p)} }  =  c_p \, t^{\frac{2}{5-p}} \; , \quad c_p =  \left( \frac{16 \pi^2 a_p}{(7-p)^2} \right)^{\frac{1}{5-p}}
-\; .
-\end{eqnarray}
-The condition $U_0  \ll \lambda^{1/(3-p)}$ above for supergravity to be valid translates into the condition,
-$
-t \ll 1
-$
-on the dimensionless temperature. Thus we see that gravity makes the following parametric predictions 
-at low temperature;
-\begin{eqnarray}
- \epsilon \sim N^2 t^{\frac{2(7-p)}{5-p}} \lambda^{(1+p)/(3-p)} \hspace{4mm} \mathrm{for} \hspace{3mm} t \ll 1 
-\end{eqnarray}
-
-  whereas, the power law is :
-
-\begin{eqnarray}
- \epsilon \sim N^2 t^{1+p} \hspace{4mm} \mathrm{for} \hspace{3mm} t \gg 1 
-\end{eqnarray}
-
-\end{comment} 
-
-In Chapter \ref{ch3}, we will discuss the large $N$ limit of two-dimensional SYM theory with sixteen supercharges 
+In Chapter \ref{ch3}, we will discuss the large $N$ limit of two-dimensional SYM theory with sixteen supercharges
 and show some qualitative agreement with holography. 
 The phase diagram of thisYang-Mills theory which is compactified on a torus is labeled by two parameters; 
 the extent of the lattice in the Euclidean time direction \& the extent of spatial direction. These two 
 directions are distinguished by the boundary conditions on the fermions, which is anti-periodic in the
 temporal direction and periodic in spatial. 
-$\mathcal{N}$ = (8,8) SYM Euclidean action (continuum theory) in two dimensions is given by, 
-
-
+$\mathcal{N}$ = (8,8) SYM Euclidean action in two dimensions is given by, 
 \begin{eqnarray}
 && 
        S=\frac{N}{\lambda}\int{}{\rm d}^2x\ {\rm tr} 
@@ -563,7 +517,6 @@ $\mathcal{N}$ = (8,8) SYM Euclidean action (continuum theory) in two dimensions 
         + \frac{1}{2}\Psi_\alpha (\gamma_i)_{\alpha \beta} [X_i, \Psi_\beta] \right\},
         \label{cont_action}
 \end{eqnarray}
-
 where, the Roman indices $i,j$ run from $2$ to $9$, 
 the Greek indices associated with the space-time directions $\mu,\nu$ take the value $0$ or $1$,
 while the Greek indices associated with spinors $\alpha, \beta$ run from $1$ to $16$. 
@@ -595,11 +548,9 @@ S_{\text{BFSS}} = \frac{N}{4\lambda} \int dt \mathrm{Tr} \Bigg[
 \label{BFSS_action}
 \end{align}
 here $D_t$ is the covariant derivative and summation over spatial indices 
-$I,J=1,\cdots,9$ and  spinor indices $\alpha,\beta=1,\dots,16$ is implicit. 
+$I,J=1,\cdots,9$ and  spinor indices $\alpha,\beta=1,\cdots,16$ is implicit. 
 The 't Hooft coupling $\lambda$ has dimension $[E]^3$. 
 This model has a single deconfined phase corresponding to the black hole solution with $\mathbb{S}_{8}$ topology. 
-
-
 
 
 \subsection{PWMM/BMN Model}

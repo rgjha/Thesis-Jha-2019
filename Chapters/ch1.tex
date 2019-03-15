@@ -26,7 +26,7 @@ model in two dimensions for $T \le T_{KT}$}. Since this is such an interesting t
 properties non perturbatively as well. This motivation has resulted in several decades of work of realizing the 
 supersymmetry on the lattice which furnishes a gauge-invariant regularization to study the theory at strong couplings. $\mathcal{N}=4$ SYM
 is also special because it takes part in the AdS/CFT correspondence, the first concrete example of a 
-holographic correspondence between supersymmetric gauge theory and a gravity theory on anti-deSitter 
+holographic correspondence between supersymmetric gauge theory and a gravity theory on anti-deSitter (AdS)
 spacetime \cite{Maldacena:1997re, Itzhaki:1998dd, Aharony:1999ti}. 
 For a nice discussion on lattice gauge theory and AdS/CFT correspondence, see ~\cite{Caselle:2000tn}.
 
@@ -51,7 +51,7 @@ the partition function is formally divergent, and it was shown that when Monte
 Carlo simulations of this theory are performed, this divergence eventually causes the
 simulation to break down. The second kind of approach to a non-perturbative approach to string theory/M-theory 
 is via the AdS/CFT correspondence. It was first studied by Maldacena for which the pair system was 
-Type IIB supergravity on $AdS^{5}$ and $\mathcal{N}$ = 4 SYM. 
+Type IIB supergravity on AdS$_5 \times S_5$ and $\mathcal{N}$ = 4 SYM.
 Using this duality, several results for the strongly coupled field theory have been reproduced by the classical 
 gravity in the bulk. However, the other direction, $\emph{i.e.}$
 getting some results for gravity from field theory has been less explored because of lack of calculational tools in 
@@ -72,61 +72,70 @@ Supersymmetry is a theoretical idea which relates half-integer (fermions) and
 integer-spin (bosons). For a nice review on supersymmetry and its lattice constructions, 
 see \cite{Argyres:2001eva, Seiberg:1997ax, Catterall:2009it}. 
 
-The roots of supersymmetry go back to 1967 when Coleman and Mandula (CM) proved a theorem ~\cite{Coleman:1967ad} 
+The roots of supersymmetry were laid when Coleman and Mandula (CM) proved a theorem ~\cite{Coleman:1967ad} 
 which was then supposed to be the final nail in the discussion of how the Poincare group and internal symmetries can 
 be mixed together. 
 They showed that under some assumptions, there was no non-trivial way of combining the two. In a way, it meant that 
 there cannot be any manner in which the fermions can be brought on the same footing as bosons. But, then, physics 
-thrives on crisis and exceptions. A few years later, Haag, Lopuszanski \& Sohnius ~\cite{Haag:1974qh} showed that the 
+thrives on crisis and exceptions. A few years later, Haag, Lopuszanski and Sohnius ~\cite{Haag:1974qh} showed that the 
 showed that if some of the assumptions in the Coleman-Mandula theorem are relaxed then it is possible to mix these symmetries. 
 This implied the use of graded Lie algebra instead of the normal Lie algebra which was used in the argument by CM.  
 
 
 \subsection{Extension of the space-time symmetry group} 
-
-The Poincare group is composed of transformations of the form :
-
-\[ x^{\mu} \rightarrow x^{\prime \mu} = \Lambda^{\mu}_{\hspace{1mm} \nu} x^{\nu} + a^{\mu} \]
+The Poincare group is composed of transformations of the form, 
+\begin{equation}
+x^{\mu} \rightarrow x^{\prime \mu} = \Lambda^{\mu}_{\hspace{1mm} \nu} x^{\nu} + a^{\mu}
+\end{equation}
 
 We talk about Lorentz transformations if in the above transformation we do not have the $ a^{\mu}$ part. Hence, it is pretty obvious to
 imagine Poincare transformations as a direct product between Lorentz transformations and group of 4-translations. 
 In fact, it is not a direct but semi-direct product of two. 
 The Poincare algebra is given by :
  
- \[ [M^{\mu\nu} , M^{\rho\sigma}] = i \left (M^{\mu\sigma} \eta^{\nu\rho} + M^{\nu\rho} \eta^{\mu\sigma} - M^{\mu\rho} \eta^{\nu\sigma} - M^{\nu\sigma} \eta^{\mu\rho} \right) \]
- \[ [P^{\mu}, P^{\nu}] = 0 \]
- \[ [M^{\mu\nu}, P^{\sigma}] = i \left(P^{\mu}\eta^{\nu\sigma} - P^{\nu}\eta^{\mu\sigma}\right) \]
-Here, $\textbf{M}$ is the anti-symmetric generators of the Lorentz group and $ \textbf{P}$ are the translation generators. 
+ \begin{equation}
+ M^{\mu\nu} , M^{\rho\sigma}] = i \left (M^{\mu\sigma} \eta^{\nu\rho} + M^{\nu\rho} \eta^{\mu\sigma} - M^{\mu\rho} \eta^{\nu\sigma} - M^{\nu\sigma} \eta^{\mu\rho} \right)
+ \end{equation}
+ 
+ \begin{equation}
+[P^{\mu}, P^{\nu}] = 0
+ \end{equation}
+ 
+\begin{equation}
+[M^{\mu\nu}, P^{\sigma}] = i \left(P^{\mu}\eta^{\nu\sigma} - P^{\nu}\eta^{\mu\sigma}\right)
+\end{equation}
+here $\textbf{M}$ is the anti-symmetric generators of the Lorentz group and $ \textbf{P}$ are the translation generators. 
 
 The CM theorem clearly meant that there was no non-trivial way of mixing particles with integer and half-integer spin. 
 Wess and Zumino discovered field theoretic models with this extended symmetry (called 'supersymmetry') 
 which connects Bose and Fermi fields and are generated by charge transforming like spinors under Lorentz group 
 (supercharges). These supercharges give rise to a new system of commutation and anti-commutation relations, 
 which is not precisely a Lie algebra but a graded algebra. This has a $ \mathcal{Z}_{2}$ grading. 
+The Poincar\'{e} generators $ P^\mu$ and $M^{\mu\nu}$ are bosonic generators. In supersymmetry, we add fermionic generators $Q_{\alpha}^{L}$, $\overline{Q_{\beta}^{M}}$, where
+$L, M = 1,2, \cdots \mathcal{N}$. The $\mathcal{N} = 1 $ case is simple supersymmetry and $\mathcal{N}  > 1$ is extended supersymmetry. 
+The complex spinorial generators follow the following algebra, 
 
+\begin{equation} 
+\{Q_{\alpha}^{L}, Q_{\beta}^{M}\} = \epsilon_{\alpha\beta} Z^{LM}
+\end{equation} 
 
-\vspace{3mm}
+\begin{equation} 
+ [P,Q] = 0
+ \end{equation} 
 
- The Poincar\'{e} generators $ P^\mu$ and $M^{\mu\nu}$ are bosonic generators. In supersymmetry, we add fermionic generators $Q_{\alpha}^{L}$, $\bar{Q_{\beta}^{M}}$, where
-L, M = 1,2,...$\mathcal{N}$. The $\mathcal{N} = 1 $ case is simple supersymmetry and $\mathcal{N}  > 1$ is extended supersymmetry. 
+\begin{equation} 
+[Q_{\alpha}^{L}, M_{\mu\nu}]  = \frac{1}{2} (\sigma_{\mu\nu})_{\alpha} \hspace{1mm} ^ {\beta} Q_{\beta}^{L} 
+ \end{equation} 
 
-The complex spinorial generators follow the following algebra :
+\begin{equation} 
+ \{Q_{\alpha}^{L}, \overline{Q_{\beta}^{M}}\} = \delta^{LM} \sigma^{\mu}_{\alpha\beta} P_{\mu}
+  \end{equation} 
 
-\[ \{Q_{\alpha}^{L}, Q_{\beta}^{M}\} = \epsilon_{\alpha\beta} Z^{LM} \]
-
-\[ [P,Q] = 0 \]
-
-\[ [Q_{\alpha}^{L}, M_{\mu\nu}]  = \frac{1}{2} (\sigma_{\mu\nu})_{\alpha} \hspace{1mm} ^ {\beta} Q_{\beta}^{L} \]  
-
-\[ \{Q_{\alpha}^{L}, \bar{Q_{\beta}^{M}}\} = \delta^{LM} \sigma^{\mu}_{\alpha\beta} P_{\mu} \] 
-
-The last one is the most interesting of these four. It roughly means that the supersymmetric generators are
+ The last one is the most interesting of these four. It roughly means that the supersymmetric generators are
  the square root of the four-momentum. It also means that combining two supersymmetric transformations 
  (one of each helicity) corresponds to space-time translation. Also, in our discussion, we neglect any central 
  charges denoted by Z in the first equation. That then reduces to,  
-
 \[ \{Q_{\alpha}^{L}, Q_{\beta}^{M}\} = 0 \]  
-
 This commutation relation should be enough to dissuade one from attempting to put supersymmetry on the lattice since 
 infinitesimal translations don't exist on the lattice and supersymmetry is broken at the classical level. If supersymmetry is 
 not consistent with lattice discretization, then one immediately asks - why do we really want to study lattice supersymmetry? 
@@ -136,7 +145,6 @@ of the relation between SYM theories and string theory and quantum gravity.
 Most of the features of SYM theories are at strong coupling, where we have only a handful of methods in general. 
 In order to have a valid non-perturbative definition from first principles, it would be desirable to go back to the highly 
 successful tool of lattice gauge theory which has produced amazing results in QCD. 
-
 However, supersymmetry is very different from QCD and has a much richer structure and field content. 
 One can immediately see this from supersymmetric algebra, which is very constrained. 
 Once we fix the maximum helicity (which for theories without gravity is one, and with gravity is two), 
@@ -152,7 +160,7 @@ This theory is obtained by dimensional reduction of the ten-dimensional $\mathca
 
 A good way of deciding which higher-dimensional theory to start from is to count the number of spinor components.  
 In ten dimensions, a spinor has $2^{[d/2]} = 32$ complex components which are reduced to 16 after imposing the 
-Majorana-Weyl condition consecutively in that order(which can only be done where $d mod 8 = 2$). 
+Majorana-Weyl condition consecutively in that order (which can only be done where d mod $8 = 2$). 
 Therefore, $\mathcal{N}=1$ SYM in ten dimensions has 16 real components. 
 A Majorana spinor in four dimensions has 4 components. To obtain
 $\mathcal{N}=4$ SYM in four dimensions (which has 16 real components) 
@@ -167,13 +175,14 @@ one needs to start from $\mathcal{N}=1$ SYM in four dimensions.
 
 Supersymmetric theories are endowed with a special symmetry, known as R-symmetry. 
 R-symmetry is the symmetry transforming different supercharges in a theory into each other. 
-For extended supersymmetry ($\emph{i.e} \mathcal{N} > 1$), the R-symmetry group becomes a 
+For extended supersymmetry (i.e. $\mathcal{N} > 1$), the R-symmetry group becomes a 
 global non-abelian group. The bosonic, fermionic fields and the supercharges form a representation of the 
 R-symmetry, as well as Euclidean rotation group $SO(d)_{E}$.
-$\mathcal{N}=1$ SYM in four dimensions has a U(1) R-symmetry while the while the $\mathcal{N}=1$
+$\mathcal{N}=1$ SYM in four dimensions has a U(1) R
+-symmetry while the while the $\mathcal{N}=1$
 SYM in ten dimensions has no R-symmetry. 
 When this $\mathcal{N}=1$ SYM in ten dimensions is dimensionally reduced, 
-the R-symmetry group is enlarged to $SO(10?d)$ R-symmetry. Hence, we can immediately 
+the R-symmetry group is enlarged to $SO(10-d)$ R-symmetry. Hence, we can immediately 
 see that $\mathcal{N}=4$ SYM in four dimensions has $SO(6)$ R-symmetry.
 Note that this $SO(6)$ R-symmetry is exactly the same as isometries of $S^{5}$ (five-sphere) 
 which takes part in the AdS/CFT correspondence. 
@@ -192,6 +201,7 @@ take an extended space-time supersymmetric theory and \textit{twist} it. A commo
  They have actions which are $\mathcal{Q}$-exact. 
 All the supersymmetric lattice theories are associated with topological field theories but the opposite is not always true. 
 A topological field theory (TFT) is characterized by the following:
+\vspace{3mm} 
 \begin{itemize}
 \item Collection of fields defined on a Riemannian manifold($\textbf{$\mathcal{M}$}$,g)
 \item A nilpotent operator which is Grassmann odd
@@ -208,17 +218,11 @@ In general, Q is metric independent and is the simplest situation. However, ther
 where $T_{\alpha\beta}$ is a BRST commutator even when Q fails to be metric independent. There also exist cases 
 where $T_{\alpha\beta}$ is not even a BRST commutator, though, it is possible even then, sometimes, to establish the
 topological nature. 
-
 Consider the change in the partition function :
-
 \begin{equation}
 Z = \int \mathcal{D} \phi e^{-S_{q}}
 \end{equation}
 under an infinitesimal change in the metric, we get :
-
-
-
-
 \begin{align}
 \delta_{g} Z&= \int \mathcal{D} \phi e^{-S_{q}} \left(-\frac{1}{2} \int_{M} d^{n} x 
 \sqrt{g} \delta g^{\alpha\beta} T_{\alpha\beta}\right)\\
@@ -226,73 +230,47 @@ under an infinitesimal change in the metric, we get :
 \sqrt{g} \delta g^{\alpha\beta} QG_{\alpha\beta}\right)\\
 &=\int \mathcal{D} \phi e^{-S_{q}} Q\chi_{\alpha\beta} = \langle Q\chi_{\alpha\beta}\rangle = 0
 \end{align}
-
 where, $ \chi = - \frac{1}{2} \int_{M} d^{n}x \sqrt{g} \delta g^{\alpha\beta} G_{\alpha\beta}$. We have 
 used the fact that vacuum is BRST invariant. 
 This means that the partition function does not depend on the local structure of the manifold: 
 Z is a topological invariant. 
-
 Now consider the following action, 
 \begin{equation}
 S(\phi) = \int d^{d} x \sqrt{g} \left[g^{\mu\nu} \nabla_{\mu} \phi  \nabla_{\nu} \phi \right]
 \end{equation}
-
 where $g^{\mu\nu}$ is the Riemannian metric and $\nabla$ is the covariant derivative. We can define the energy-momentum tensor as :
-
 \begin{equation}
 T_{\mu\nu} = \frac{\delta S}{\delta g^{\mu\nu}} 
 \end{equation}
-
 and rewriting it gives, \footnote{Using the fact that Z is already independent of metric} : 
-
-
 \begin{equation}
 \langle T_{\mu\nu} \rangle =  \frac{1}{\mathcal{Z}}\int \mathcal{D} \phi \hspace{1mm} \left(\frac{\delta S}{\delta g^{\mu\nu}}\right) \exp\left[\frac{-S(\phi)}{\hbar}\right]  
 \end{equation}
-
 \begin{equation}
 \langle T_{\mu\nu} \rangle= 0
 \end{equation}
-
-
-We have established that the metric variation of the partition function vanishes, and in turn that the energy-momentum tensor is zero, 
-we now look whether we have other metric independent correlation functions in the theory?
-
-
+We have established that the metric variation of the partition function vanishes, and in turn that the energy-momentum tensor is zero.  
 We need to examine the presence of other metric independent correlation functions in the theory. 
 Let's start by considering the vacuum expectation value of an observable :
 
 \begin{equation}
  \langle \mathcal{O} \rangle = \int \mathcal{D} \Phi e^{-S} \mathcal{O}(\Phi)
  \end{equation}
-
 We have to derive the conditions for this execration value to be zero. 
-
 \begin{equation}
 \delta \langle \mathcal{O} \rangle = \int \mathcal{D} \Phi e^{-S} (\delta_{g} \mathcal{O} - \delta_{g} S_{q} \cdot \mathcal{O})
 \end{equation}
-
-
 Assume that $\mathcal{O}$ satisfies the following properties :
-
 \begin{equation}
 \delta_{g} \mathcal{O} = \{Q, T\}  \hspace{2mm} , \hspace{5mm} \{Q, \mathcal{O}\} = 0
 \end{equation}
-
-
 for some T, we then have :
-
 \begin{equation}
 \delta_{g}\langle \mathcal{O} \rangle = \langle \{Q, T + \chi \mathcal{O}\}\rangle = 0
 \end{equation}
-
 It is interesting to note that even though $\chi$ which depends on $V_{\alpha\beta}$ contains metric dependence, 
 we have wrapped it up in form of BRST commutator and still have metric independence. TFT can be classified into
- two types: 1. Schwarz type 2. Cohomological type (Witten-type). 
-
-\vspace{5mm} 
-
-
+two types: 1. Schwarz type 2. Cohomological type (Witten-type). 
 \begin{itemize} 
 \item \textbf{Schwarz Type}: The classical action is explicitly independent of the metric. Chern-Simons theory is a 
 prototype of this class of topological field theories introduced by Witten in 1980s. The metric independence implies 
@@ -301,15 +279,9 @@ because of the fact that the remaining part of quantum action has been recast as
 $ \frac{\delta S}{\delta g^{\mu\nu}} = T_{\mu\nu} = 0 $. The alternate cases where the classical action depends 
 explicitly on metric is not dealt here. It is also clear from the equation below that the quantum action for Schwarz 
 type theories do not enjoy the property that the quantum action is Q-exact. 
-
-
-
 \begin{equation}
 S_{q}(\phi, g) = S_{c}(\phi) + QV(\phi,g) 
 \end{equation}
-
-
-
 \item \textbf{Witten Type}: In Witten-type topological field theories, the topological invariance is more subtle. 
 The lagrangian generally depends on the metric explicitly, but one shows that the expectation value of the 
 partition function and special classes of correlation functions are diffeomorphism \footnote{Roughly speaking, 
@@ -317,43 +289,30 @@ this means that they are metric independent} invariant.
 The important characteristic of Witten-type theory is that the quantum action $S_{q}$, which comprised the 
 classical action plus all necessary gauge fixing and ghost terms, 
 can be written as BRST commutator i.e.,
-
 \begin{equation}
 S_{q} = \langle \{Q, V\}\rangle 
 \end{equation}
-
 for some functional $V(\phi,g)$ of the fields and Q is nilpotent. 
-
-
-
 In BRST quantization of gauge theories, one constructs a BRST operator Q which is nilpotent. 
 The variation of any functional $\mathcal{O}$ is denoted by $
 \delta\mathcal{O} = \{Q,\mathcal{O}\} $, where the bracket is used to represent the graded commutator 
 with the fermionic charge Q. A state which is annihilated by Q is called Q-closed, while a state of the 
 form $ Q|\chi\rangle$ is called Q-exact. From the BRST invariance of the vacuum, we can conclude 
 that the vacuum expectation value of \{Q,$\mathcal{O}$\} for any functional $\mathcal{O}$ is zero i.e 
-
 \begin{equation}
  \langle 0 | \{Q,\mathcal{O}\} | 0 \rangle  = 0 
  \end{equation}
-
 An operator of the form \{Q,$\mathcal{O}\}$ is called BRST commutator. The energy-momentum tensor 
 $T_{\alpha\beta}$ is defined as the change in the action under smooth deformations of the metric.
-
-
 \begin{equation}
 \delta_{g} S = \frac{1}{2} \int_{M} d^{n} x \sqrt{g} \delta g_{\alpha\beta} T_{\alpha\beta}
 \end{equation}
-
 We assume throughout that the functional measure in the path integral is both Q-invariant and metric
- independent. If it is not the case, we have to check for metric anomalies which are outside the scope of this thesis. 
-
+independent. If it is not the case, we have to check for metric anomalies which are outside the scope of this thesis. 
 \end{itemize} 
 
 
 \subsection{Twisting of the supersymmetric theory}
-
-
 In the 1980s, Witten noticed that supersymmetry has a deep relation to topology. 
 The simplest example of such a relation is supersymmetric quantum mechanics, 
 which provides a physical reformulation of Morse theory. 
@@ -372,7 +331,6 @@ then replaces it by the diagonal sum of that component with a SU(2) subgroup of 
 This is similar to identify the different indices as mentioned in the text}. For the $\mathcal{N}$ = 2 
 SUSY in four dimensions, this can be done in only one way. There might be several ways of doing
 this twisting depending on how large the R-symmetry group is for that theory.
-
 
 The new choice of rotation group involved in the twist implies that the isospin index $\textit{i}$ 
 becomes a spinorial index $\alpha$ : $ \mathcal{Q}^{i}_{\alpha} \mapsto \mathcal{Q}^{\beta}_{\alpha}$ 
@@ -449,7 +407,7 @@ and sixteen fermionic matrices in the adjoint representation of the gauge group 
 Supersymmetry and conformal symmetry in $\mathcal{N} = 4 $ SYM leads
 to even bigger symmetry group, due to the fact that supersymmetry and
 special conformal transformations do not commute. 
-The entire group is known as the superconformal group and is given by
+The entire group is known as the superconformal (SC) group and is given by
 the supergroup $SU(2, 2|4)$. 
 %This theory also takes part in the AdS/CFT correspondence. 
 
