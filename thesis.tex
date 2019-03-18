@@ -33,7 +33,6 @@
 \usepackage{bibunits}
 \usepackage{chngcntr}
 \usepackage{etoolbox}
-\usepackage{feynmp}	% Feynman diagrams
 \usepackage{url}
 \usepackage{alltt}
 \usepackage{ulem}
@@ -96,8 +95,6 @@
 	\counterwithin{figure}{section}
 	\counterwithin{table}{section}
 }
-\DeclareGraphicsRule{*}{mps}{*}{} % needed in order to include the Feynman graphs
-
 
 % % % % FOR CV
 \usepackage{array}
@@ -135,8 +132,6 @@
 }%
 \setfnsymbol{myfnsymbols}
 
-
-
 %\renewcommand{\familydefault}{\sfdefault}    % Comment this line to restore back to font used by previous fellas !
 \newcommand{\bi}{\begin{itemize}}
 \newcommand{\ei}{\end{itemize}}
@@ -150,13 +145,8 @@
 \newcommand{\TeV}{\,\mathrm{TeV}}
 \newcommand{\GeV}{\,\mathrm{GeV}}
 \newcommand{\MeV}{\,\mathrm{MeV}}
-
-
 \newcommand{\bea}{\begin{eqnarray}}
 \newcommand{\eea}{\end{eqnarray}}
-
-
-\newcommand{\TODO}[1]{\textcolor{red}{{\bf #1}}}
 \newcommand{\BUL}[1]{\tikz\draw[black,fill=black] (0,0) circle (.5ex);}
 
 
@@ -167,7 +157,6 @@
 \newcommand{\Cbb}{\ensuremath{\mathbb C} }
 \newcommand{\cgrav}{\ensuremath{c_{\text{grav}}} }
 \newcommand{\cD}{\ensuremath{\mathcal D} }
-
 \newcommand{\Ftilde}{\ensuremath{\widetilde F} }
 \newcommand{\Ibb}{\ensuremath{\mathbb I} }
 \newcommand{\cN}{\ensuremath{\mathcal N} }
@@ -179,7 +168,6 @@
 \newcommand{\cP}{\ensuremath{\mathcal P} }
 \newcommand{\cQ}{\ensuremath{\mathcal Q} }
 \newcommand{\cU}{\ensuremath{\mathcal U} }
-
 \newcommand{\xbar}{\ensuremath{\overline x} }
 \newcommand{\al}{\ensuremath{\alpha} }
 \newcommand{\ga}{\ensuremath{\gamma} }
@@ -197,24 +185,13 @@
 \newcommand{\nn}{\nonumber }
 \newcommand{\chidof}{\ensuremath{\mbox{$\chi^2/\text{d.o.f.}$}}}
 \newcommand{\pf}{\ensuremath{\text{pf}\,} }
-%\newcommand{\Tr}[1]{\ensuremath{\text{Tr}\left[ #1 \right]} }
 \newcommand{\vev}[1]{\ensuremath{\left\langle #1 \right\rangle} }
 \newcommand{\pderiv}[2]{\ensuremath{\frac{\partial #1}{\partial #2}} }
 \def\figheight{5.2 cm}
-
 \newcommand{\Tr}{\mathrm{Tr}}
-
-
-
-
 \newcommand{\ehat}{\ensuremath{\widehat e} }
 \newcommand{\muhat}{\ensuremath{\widehat \mu} }
 \newcommand{\Gdag}{\ensuremath{G^{\dag}} }
-
-
-
-\newcommand{\fot}{\left(f_1^2+2 f_2^2 \right)}
-\newcommand{\fott}{\left( f_1^2 + f_2^2 \right)}
 \newcommand{\sla}{\slash \hspace{-0.2cm}}
 \newcommand{\slam}{\slash \hspace{-0.25cm}}
 \newcommand{\norm}[1]{\left\Vert#1\right\Vert}
@@ -234,12 +211,7 @@
 \newcommand{\Te}{T_{eff}}
 \newcommand{\oo}[1]{\textcolor{blue}{[{\bf OO}: #1]}}
 \newcommand{\SW}[1]{\textcolor{red}{[{\bf SW}: #1]}} 
-\def\eg{{\it e.g.~}}
-\def\etal{{\it et al.~}}
-\def\ie{{\it i.e.~}}
 \def\bphi{\bar{\phi}}
-\def\OMIT#1{{}}
-   
 \newcommand{\CM}{{\mathcal M}}
 \newcommand{\CK}{{\mathcal K}}   
 \newcommand{\idt}{\int d^2\theta}
@@ -259,12 +231,9 @@
 \newcommand{\OO}{\mathcal{O}}
 \newcommand{\diag}{\mathrm{diag}}
 \newcommand{\sss}{{\scriptscriptstyle \Sigma}}
-
-
 \newcommand{\CR}{\notag \\}
 \newcommand{\leqn}[1]{(\ref{#1})}
 \def\nn{\nonumber}
-               
 \newcommand{\cL}{{\cal L}} 
 
 %%% Paper II needs some shortcuts below 
@@ -280,7 +249,6 @@
 \newcommand{\qo}{\ensuremath{\ono{Q}}}
 \newcommand{\ro}{\ensuremath{\ono{R}}}
 \newcommand{\da}{\ensuremath{^\dagger}}
-
 \newcommand{\Ga}{\ensuremath{\Gamma}}
 \newcommand{\de}{\ensuremath{\delta}}
 \newcommand{\na}{\ensuremath{\nabla}}
@@ -288,32 +256,24 @@
 \newcommand{\bpsi}{\ensuremath{\bar{\psi}}}
 \newcommand{\lna}{\overleftarrow{\nabla}}
 \newcommand{\red}{\textcolor{red}}
-
 \newcommand{\hf}{\frac{1}{2}}
-
-
-
 \newcommand{\cF}{{\cal F}}
 \newcommand{\cFb}{{\overline{\cal F}}}
 \newcommand{\cDb}{{\overline{\cal D}}}
 \newcommand{\cUb}{{\overline{\cal U}}}
-
 \newcommand{\vx}{ {\bf x} }
 \newcommand{\hatbe}{\widehat{\boldsymbol {e}}}
 \newcommand{\SB}{{\bar{S}}}
 \newcommand{\CHI}{\ensuremath{\mbox{$\chi^2/\text{d.o.f.}$}}}
-
 \def\nn{\nonumber}
 \def\beq{\begin{equation}}
 \def\eeq{\end{equation}}
 \def\bea{\begin{eqnarray}}
 \def\eea{\end{eqnarray}}
-
 \newcommand{\RT}{{r_{\tau}}}
 \newcommand{\vac}{\mathcal{E}_{\mathrm{VAC}}}
 \newcommand{\Lt}{\mathrm{lim}}
 \newcommand{\vevE}[1]{\ensuremath{\left\langle #1 \right\rangle} }
-
 \def\bE{\mathbbm{e}}
 \def\bD{\mathbbm{D}}
 \def\ds{d_{\rm S}}
@@ -334,7 +294,6 @@
 \def\sbar{\overline}
 \def\stilde{\widetilde}
 \begin{document}
-
 \frontmatter
 \pagenumbering{roman}
 \include{head1}     %%%%% calls abstract.tex, ackno.tex, list_pubs.tex, conventions.tex
@@ -343,6 +302,7 @@
 
 
 \chapter{\label{ch1}Introduction}
+%to lattice supersymmetry
 \input{Chapters/ch1.tex}
 
 \chapter{\label{ch2}Large $N$ limit and holographic dualities}

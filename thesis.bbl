@@ -1,4 +1,4 @@
-\begin{thebibliography}{146}
+\begin{thebibliography}{157}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -171,6 +171,21 @@
   \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Schalm}},
   \emph{\bibinfo{title}{{Holographic duality in condensed matter physics}}}
   (\bibinfo{publisher}{Cambridge University Press}, \bibinfo{year}{2015}).
+
+\bibitem[{\citenamefont{Gubser et~al.}(1998)\citenamefont{Gubser, Klebanov, and
+  Polyakov}}]{Gubser:1998bc}
+\bibinfo{author}{\bibfnamefont{S.~S.} \bibnamefont{Gubser}},
+  \bibinfo{author}{\bibfnamefont{I.~R.} \bibnamefont{Klebanov}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~M.}
+  \bibnamefont{Polyakov}}, \bibinfo{journal}{Phys. Lett.}
+  \textbf{\bibinfo{volume}{B428}}, \bibinfo{pages}{105} (\bibinfo{year}{1998}),
+  \eprint{hep-th/9802109}.
+
+\bibitem[{\citenamefont{Witten}(1998{\natexlab{a}})}]{Witten:1998qj}
+\bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Witten}},
+  \bibinfo{journal}{Adv. Theor. Math. Phys.} \textbf{\bibinfo{volume}{2}},
+  \bibinfo{pages}{253} (\bibinfo{year}{1998}{\natexlab{a}}),
+  \eprint{hep-th/9802150}.
 
 \bibitem[{\citenamefont{'t~Hooft}(1993)}]{tHooft:1993dmi}
 \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{'t~Hooft}},
@@ -514,10 +529,11 @@
   \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{80}},
   \bibinfo{pages}{4859} (\bibinfo{year}{1998}), \eprint{hep-th/9803002}.
 
-\bibitem[{\citenamefont{Witten}(1998)}]{Witten:1998zw}
+\bibitem[{\citenamefont{Witten}(1998{\natexlab{b}})}]{Witten:1998zw}
 \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Witten}},
   \bibinfo{journal}{Adv. Theor. Math. Phys.} \textbf{\bibinfo{volume}{2}},
-  \bibinfo{pages}{505} (\bibinfo{year}{1998}), \eprint{hep-th/9803131}.
+  \bibinfo{pages}{505} (\bibinfo{year}{1998}{\natexlab{b}}),
+  \eprint{hep-th/9803131}.
 
 \bibitem[{\citenamefont{Aharony
   et~al.}(2004{\natexlab{b}})\citenamefont{Aharony, Marsano, Minwalla,
@@ -636,14 +652,40 @@
   \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D78}},
   \bibinfo{pages}{041502} (\bibinfo{year}{2008}), \eprint{0803.4273}.
 
-\bibitem[{\citenamefont{Catterall et~al.}(2018)\citenamefont{Catterall, Jha,
-  Schaich, and Wiseman}}]{Catterall:2017lub}
+\bibitem[{\citenamefont{Boyd et~al.}(1996)\citenamefont{Boyd, Engels, Karsch,
+  Laermann, Legeland, Lutgemeier, and Petersson}}]{Boyd:1996bx}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Boyd}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Engels}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Karsch}},
+  \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Laermann}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Legeland}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Lutgemeier}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Petersson}},
+  \bibinfo{journal}{Nucl. Phys.} \textbf{\bibinfo{volume}{B469}},
+  \bibinfo{pages}{419} (\bibinfo{year}{1996}), \eprint{hep-lat/9602007}.
+
+\bibitem[{\citenamefont{Nakamura and Sakai}(2005)}]{Nakamura:2004sy}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Nakamura}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Sakai}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{94}},
+  \bibinfo{pages}{072305} (\bibinfo{year}{2005}), \eprint{hep-lat/0406009}.
+
+\bibitem[{\citenamefont{Panero}(2009)}]{Panero:2009tv}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Panero}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{103}},
+  \bibinfo{pages}{232001} (\bibinfo{year}{2009}), \eprint{0907.3719}.
+
+\bibitem[{\citenamefont{Catterall
+  et~al.}(2018{\natexlab{a}})\citenamefont{Catterall, Jha, Schaich, and
+  Wiseman}}]{Catterall:2017lub}
 \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Catterall}},
   \bibinfo{author}{\bibfnamefont{R.~G.} \bibnamefont{Jha}},
   \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Schaich}}, \bibnamefont{and}
   \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Wiseman}},
   \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D97}},
-  \bibinfo{pages}{086020} (\bibinfo{year}{2018}), \eprint{1709.07025}.
+  \bibinfo{pages}{086020} (\bibinfo{year}{2018}{\natexlab{a}}),
+  \eprint{1709.07025}.
 
 \bibitem[{\citenamefont{Jha et~al.}(2017)\citenamefont{Jha, Catterall, Schaich,
   and Wiseman}}]{Jha:2017zad}
@@ -655,6 +697,39 @@
   Theory Granada, Spain, June 18-24, 2017}}} (\bibinfo{year}{2017}),
   \eprint{1710.06398},
   \urlprefix\url{http://inspirehep.net/record/1631193/files/arXiv:1710.06398.pdf}.
+
+\bibitem[{\citenamefont{Mas and Tarrio}(2007)}]{Mas:2007ng}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Mas}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Tarrio}},
+  \bibinfo{journal}{JHEP} \textbf{\bibinfo{volume}{05}}, \bibinfo{pages}{036}
+  (\bibinfo{year}{2007}), \eprint{hep-th/0703093}.
+
+\bibitem[{\citenamefont{David et~al.}(2009)\citenamefont{David, Mahato, and
+  Wadia}}]{David:2009np}
+\bibinfo{author}{\bibfnamefont{J.~R.} \bibnamefont{David}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Mahato}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.~R.} \bibnamefont{Wadia}},
+  \bibinfo{journal}{JHEP} \textbf{\bibinfo{volume}{04}}, \bibinfo{pages}{042}
+  (\bibinfo{year}{2009}), \eprint{0901.2013}.
+
+\bibitem[{\citenamefont{Kanitscheider and
+  Skenderis}(2009)}]{Kanitscheider:2009as}
+\bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Kanitscheider}}
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Skenderis}},
+  \bibinfo{journal}{JHEP} \textbf{\bibinfo{volume}{04}}, \bibinfo{pages}{062}
+  (\bibinfo{year}{2009}), \eprint{0901.1487}.
+
+\bibitem[{\citenamefont{Rey and Yee}(2001)}]{Rey:1998ik}
+\bibinfo{author}{\bibfnamefont{S.-J.} \bibnamefont{Rey}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.-T.} \bibnamefont{Yee}},
+  \bibinfo{journal}{Eur. Phys. J.} \textbf{\bibinfo{volume}{C22}},
+  \bibinfo{pages}{379} (\bibinfo{year}{2001}), \eprint{hep-th/9803001}.
+
+\bibitem[{\citenamefont{Unsal}(2005)}]{Unsal:2005yh}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Unsal}},
+  \bibinfo{journal}{JHEP} \textbf{\bibinfo{volume}{11}}, \bibinfo{pages}{013}
+  (\bibinfo{year}{2005}), \eprint{hep-lat/0504016}.
 
 \bibitem[{\citenamefont{Grisaru et~al.}(1979)\citenamefont{Grisaru, Siegel, and
   Rocek}}]{Grisaru:1979wc}
@@ -849,6 +924,16 @@
 \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Catterall}},
   \bibinfo{journal}{JHEP} \textbf{\bibinfo{volume}{01}}, \bibinfo{pages}{040}
   (\bibinfo{year}{2009}), \eprint{0811.1203}.
+
+\bibitem[{\citenamefont{Catterall
+  et~al.}(2018{\natexlab{b}})\citenamefont{Catterall, Jha, and
+  Joseph}}]{Catterall:2017xox}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Catterall}},
+  \bibinfo{author}{\bibfnamefont{R.~G.} \bibnamefont{Jha}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Joseph}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D97}},
+  \bibinfo{pages}{054504} (\bibinfo{year}{2018}{\natexlab{b}}),
+  \eprint{1801.00012}.
 
 \bibitem[{\citenamefont{Clark et~al.}(2005)\citenamefont{Clark, Kennedy, and
   Sroczynski}}]{Clark:2004cp}
