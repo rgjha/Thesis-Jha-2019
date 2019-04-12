@@ -22,7 +22,7 @@ The plan of this chapter will be as follows. In Sec. \ref{sec:theory} we review 
 
 The two-dimensional $\cN = (2, 2) $ SYM theory is the simplest supersymmetric gauge theory which admits topological twisting \cite{Witten:1988ze} and thus satisfies the requirements for a supersymmetric lattice construction following the prescription given in Refs. \cite{Catterall:2004np, Catterall:2006jw}, where the first numerical simulations of this construction were performed. The theory has global symmetry group $G = SO(2)_E \times SO(2)_{R_1} \times U(1)_{R_2}$, where $SO(2)_E$ is the two-dimensional Euclidean Lorentz rotation symmetry, $SO(2)_{R_1}$ is the symmetry due to reduced directions and $U(1)_{R_2}$ is the R-symmetry of the parent four-dimensional $\cN =1$ SYM theory. This theory can be twisted in two inequivalent ways (the A-model and B-model twists) depending on how we embed $SO(2)_E$ group into $SO(2)_{R_1} \times SO(2)_{R_2}$ the internal symmetry group. 
 
-We are interested in the B-model twist, which gives rise to a strictly nilpotent twisted supersymmetry charge. After twisting, the fields and supersymmetries are expressed as representations of the the twisted Euclidean Lorentz group
+We are interested in the B-model twist, which gives rise to a strictly nilpotent twisted supersymmetry charge. After twisting, the fields and supersymmetries are expressed as representations of the twisted Euclidean Lorentz group
 \beq
 SO(2)' = {\rm diag} \Big( SO(2)_E \times SO(2)_{R_1} \Big).
 \eeq 
@@ -32,10 +32,7 @@ S = \frac{N}{2 \lam} \cQ \int d^2x\,\Psi,
 \label{2daction_twisted}
 \eeq
 where 
-%\beq
-%\Psi = \Tr \Big( \chi_{ab} \cF_{ab} + \eta [ \cDb_a, \cD_b ] - \frac{1}{2}\eta d \Big),
-%\eeq
-and $\lam = g^2 N$ is the 't~Hooft coupling. We use an anti-hermitian basis for the generators of the gauge group with $\Tr (T_a T_b)  = - \delta_{ab}$.
+$\lam = g^2 N$ is the 't~Hooft coupling. We use an anti-hermitian basis for the generators of the gauge group with $\Tr (T_a T_b)  = - \delta_{ab}$.
 
 The four degrees of freedom appearing in the above action are just the twisted fermions $(\eta, \psi_a, \chi_{ab})$ and a complexified gauge field $\cA_a$. The complexified field is constructed from the usual gauge field $A_a$ and the two scalars $B_a$ present in the untwisted theory: $\cA_a = A_a + iB_a$.
 The twisted theory is naturally written in terms of the complexified covariant derivatives
@@ -107,14 +104,14 @@ S &=& S_B + S_F,
 \eea
 where the bosonic action is
 
-%\begin{equation}
-%S_{B} = \frac{N}{2 \lambda} \sum_{\vn} \Tr \Big( \cF_{ab}^\dagger(\vn) \cF_{ab}(\vn) + \hf \Big(\cDb_a^{(-)} \cU_a(\vn)\Big)^2\Big), \nonumber 
-%\end{equation}
+\begin{equation}
+S_{B} = \frac{N}{2 \lambda} \sum_{\vn} \Tr \Big( \cF_{ab}^\dagger(\vn) \cF_{ab}(\vn) + \hf \Big(\cDb_a^{(-)} \cU_a(\vn)\Big)^2\Big), \nonumber 
+\end{equation}
 
 and the fermionic piece
-%\begin{equation}
-%S_F = \frac{N}{2 \lam} \sum_{\vn} \Tr \Big( - \chi_{ab}(\vn) \cD^{(+)}_{[a} \psi_{b]}(\vn) - \eta(\vn) \cDb^{(-)}_a \psi_a(\vn) \Big). \nonumber 
-%\end{equation}
+\begin{equation}
+S_F = \frac{N}{2 \lam} \sum_{\vn} \Tr \Big( - \chi_{ab}(\vn) \cD^{(+)}_{[a} \psi_{b]}(\vn) - \eta(\vn) \cDb^{(-)}_a \psi_a(\vn) \Big). \nonumber 
+\end{equation}
 It was correctly noted in Ref. \cite{Kanamori:2008bk} that for simulation purposes, we need to add a small supersymmetry breaking scalar potential to stabilize the $SU(N)$ flat directions of the theory. We add a single trace deformation term to the action in Eq. (\ref{eq:2d-latticeaction}) as, 
 %\beq
 %\label{eq:single_trace}
@@ -127,7 +124,7 @@ with a tunable parameter $\mu$. Exact supersymmetry at $\mu = 0$ ensures that al
 \label{sec:computation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-We simulate the theory on a square lattice with anti-periodic boundary conditions (aPBC) for fermions in the temporal direction. The physical size of the lattice is $\beta \times L$, where $\beta$ is the dimensionful temporal extent and $L$ the dimensionful spatial extent. We denote the lattice spacing as $a$ while $N_t$ is the number of lattice sites along the temporal direction and $N_x$ number of sites along the spatial direction. Thus the dimensionful quantities are $\beta = a N_t$ and $L = a N_x$. In our case the lattice is symmetric: $N_t = N_x$. 
+We simulate the theory on a square lattice with anti-periodic boundary conditions (aPBC) for fermions in the temporal direction. The physical size of the lattice is $\beta \times L$, where $\beta$ is the dimensionful temporal extent and $L$ the dimensionful spatial extent. We denote the lattice spacing as $a$ while $N_t$ is the number of lattice sites along the temporal direction and $N_x$ the number of sites along the spatial direction. Thus the dimensionful quantities are $\beta = a N_t$ and $L = a N_x$. In our case the lattice is symmetric: $N_t = N_x$. 
 
 In two dimensions, the 't~Hooft coupling $\lambda$ is dimensionful and we can construct the dimensionless temporal circle size, 
 \beq
@@ -181,14 +178,14 @@ It is clear from the tables that the order of taking these \emph{different} limi
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-We integrate out the fermions to produce a Pfaffian, which in turn is represented by square root of a determinant. The fermion determinant with a fractional power can be simulated using Rational Hybrid Monte Carlo (RHMC) algorithm \cite{Clark:2004cp}. In the simulations we used the absolute value of the Pfaffian. The phase of the Pfaffian may be incorporated back in the expectation values of observables by re-weighting although as will be seen in the next section the measured Pfaffian phase is always small in our simulations.
+We integrate out the fermions to produce a Pfaffian, which in turn is represented by the square root of a determinant. The fermion determinant with a fractional power can be simulated using the Rational Hybrid Monte Carlo (RHMC) algorithm \cite{Clark:2004cp}. In the simulations we used the absolute value of the Pfaffian. The phase of the Pfaffian may be incorporated back in the expectation values of observables by re-weighting although as will be seen in the next section the measured Pfaffian phase is always small in our simulations.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Phase of the Pfaffian}
 \label{sec:pfaf} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The phase of the Pfaffian was studied in Ref. \cite{Kanamori:2007ye} for two different lattice constructions. Soon after, the phase of Pfaffian for the construction we use here was calculated in Ref. \cite{Catterall:2011aa} and it was observed that it vanishes as one approaches the continuum limit. It was correctly noted in Ref. \cite{Hanada:2010qg} that the absence of the sign is a property of the correct continuum limit. In this chapter, we will study the phase of the Pfaffian at stronger couplings than have been explored before and on much larger lattices using the parallel code developed in Ref. \cite{Schaich:2014pda}. We show that the phase fluctuations become small and vanish as we take the continuum limit. This is true for all couplings we have considered. However, on a fixed lattice volume, the magnitude of the phase fluctuations grows with the coupling. This implies that accessing stronger couplings ($t \le 1/9$) requires the use of larger lattices if we are to avoid a sign problem. We show these results in Fig. \ref{fig:pfaffian1}.
+The phase of the Pfaffian was studied in Ref. \cite{Kanamori:2007ye} for two different lattice constructions. Soon after, the phase of the Pfaffian for the construction we use here was calculated in Ref. \cite{Catterall:2011aa} and it was observed that it vanishes as one approaches the continuum limit. It was correctly noted in Ref. \cite{Hanada:2010qg} that the absence of the sign is a property of the correct continuum limit. In this chapter, we will study the phase of the Pfaffian at stronger couplings than have been explored before and on much larger lattices using the parallel code developed in Ref. \cite{Schaich:2014pda}. We show that the phase fluctuations become small and vanish as we take the continuum limit. This is true for all couplings we have considered. However, on a fixed lattice volume, the magnitude of the phase fluctuations grows with the coupling. This implies that accessing stronger couplings ($t \le 1/9$) requires the use of larger lattices if we are to avoid a sign problem. We show these results in Fig. \ref{fig:pfaffian1}.
 \subsection{Ground State Energy}
 \label{sec:ground-state-e}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -275,7 +272,7 @@ Table \ref{table:order_a}.
 \hline
 \end{tabular}
 
-\caption{\label{table:order_a}Numerical results showing that our action is effectively $\cO(a)$ improved. We measure the deviation of the bosonic action/site from its supersymmetric value of $\frac{3}{2}N^2$ and fit it to power law. The first column shows the soft-mass parameter, $\zeta$, we use to regulate the flat directions. The second column is the obtained value of the power, $p$, constraining vanishing intercept, the third is the obtained value of the power, $p$, \emph{without} constraining the intercept. We quote results from one of the couplings used in this work, $\RT$ = 6. On the top, we show the results with $U(3)$ and with $U(2)$ at the bottom. The fits are very good with maximum \CHI = 2.80.}
+\caption{\label{table:order_a}Numerical results showing that our action is effectively $\cO(a)$ improved. We measure the deviation of the bosonic action/site from its supersymmetric value of $\frac{3}{2}N^2$ and fit it to a power law. The first column shows the soft-mass parameter, $\zeta$, we use to regulate the flat directions. The second column is the obtained value of the power, $p$, constraining vanishing intercept, the third is the obtained value of the power, $p$, \emph{without} constraining the intercept. We quote results from one of the couplings used in this work, $\RT$ = 6. On the top, we show the results with $U(3)$ and with $U(2)$ at the bottom. The fits are very good with maximum \CHI = 2.80.}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%
 
